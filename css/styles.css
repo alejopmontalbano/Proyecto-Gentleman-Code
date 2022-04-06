@@ -1,0 +1,1696 @@
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px repeat(5, auto);
+        grid-template-areas:
+            "header"
+            "imgPrincipal"
+            "prodMasVend"
+            "descuentos"
+            "infoCompra"
+            "footer";
+    }
+
+    /* SECCION DE NAVEGACION Y ENCABEZADO*/
+
+    header {
+        grid-area: header;
+        background-color: #000;
+        padding: 10px;
+        position: sticky;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 25px;
+        letter-spacing: 2px;
+        padding-bottom: 15px;
+    }
+
+    .logo:hover {
+        font-weight: 300;
+        color: rgb(200, 200, 200);
+    }
+
+    .enlaces {
+        padding: auto;
+    }
+
+    .enlaces li {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .enlaces a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+
+    .enlaces a:hover {
+        font-weight: 300;
+        color: rgb(200, 200, 200);
+    }
+
+    /*SECCION IMG PRINCIPAL*/
+
+    #imgPrincipal {
+        grid-area: imgPrincipal;
+    }
+
+    #imgPrincipal img {
+        width: 100%;
+    }
+
+    #imgPrincipal p {
+        margin: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: #000;
+        font-weight: 300;
+    }
+
+    #imgPrincipal p:hover {
+        color: #000;
+        font-weight: 600;
+    }
+
+    /*SECCION PRODUCTOS MAS VENDIDOS*/
+
+    #prodMasVend {
+        grid-area: prodMasVend;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-flow: column;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 22px;
+        letter-spacing: 3px;
+        margin: 20px;
+    }
+
+    h2:hover {
+        letter-spacing: 6px;
+    }
+
+    .prodMasVendidos__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container__productos {
+        border: #000 solid 2px;
+        margin: 20px;
+    }
+
+    .container__productos:hover {
+        box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .container__productos img {
+        border-bottom: #000 solid 2px;
+        width: 300px;
+        height: 370px;
+    }
+
+    .container__productos p {
+        text-align: center;
+        padding: 12px;
+        font-weight: 600;
+    }
+
+    .prodMasVendidos__formulario {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    .prodMasVendidos__formulario input {
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .prodMasVendidos__formulario input:hover {
+        font-weight: 300;
+    }
+
+
+    /*SECCION DESCUENTAZOS*/
+
+    #descuentos {
+        grid-area: descuentos;
+    }
+
+    .descuentos__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .descuentos__productos {
+        border: #000 solid 2px;
+        margin: 20px;
+    }
+
+    .descuentos__productos:hover {
+        box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .descuentos__productos img {
+        border-bottom: #000 solid 2px;
+        width: 300px;
+        height: 370px;
+    }
+
+    .descuentos__productos p {
+        text-align: center;
+        padding: 12px;
+        font-weight: 600;
+    }
+
+    /*SECCION INFO*/
+
+    #infoCompra {
+        grid-area: infoCompra;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 50px;
+    }
+
+    .info__container {
+        text-align: center;
+        margin: 30px;
+    }
+
+    h3 {
+        font-weight: 600;
+    }
+
+
+    /*FOOTER*/
+
+    footer {
+        grid-area: footer;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+    }
+
+    h4 {
+        letter-spacing: 2px;
+        padding: 10px 10px 10px 0;
+    }
+
+    footer img {
+        background-color: #fff;
+        width: 18px;
+        height: 18px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    footer img:hover {
+        background-color: rgb(200, 200, 200);
+    }
+
+    footer a {
+        text-align: center;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    footer a:hover {
+        color: rgb(200, 200, 200);
+    }
+
+
+    .containerFooter {
+        display: flex;
+        flex-flow: column wrap;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    footer span {
+        padding-left: 10px;
+    }
+
+    .contactános {
+        padding-top: 40px;
+    }
+
+    .copyright {
+        padding-top: 40px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .by {
+        font-weight: 600;
+        padding-top: 15px;
+    }
+
+
+}
+
+
+/* VISTA TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px repeat(5, auto);
+        grid-template-areas:
+            "header"
+            "imgPrincipal"
+            "prodMasVend"
+            "descuentos"
+            "infoCompra"
+            "footer";
+    }
+
+    /* SECCION DE NAVEGACION Y ENCABEZADO*/
+
+    header {
+        grid-area: header;
+        background-color: #000;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        padding: 10px;
+        align-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .logo {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 21px;
+        letter-spacing: 2px;
+        padding-bottom: 15px;
+    }
+
+    .logo:hover {
+        font-weight: 300;
+        color: rgb(200, 200, 200);
+    }
+
+    .enlaces {
+        padding: 0 10px;
+    }
+
+    .enlaces li {
+        display: inline-block;
+        padding-left: 15px;
+    }
+
+    .enlaces a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .enlaces a:hover {
+        font-weight: 300;
+        color: rgb(200, 200, 200);
+    }
+
+    /*SECCION IMG PRINCIPAL*/
+
+    #imgPrincipal {
+        grid-area: imgPrincipal;
+    }
+
+    #imgPrincipal img {
+        width: 100%;
+    }
+
+    #imgPrincipal p {
+        margin: 20px;
+        text-align: center;
+        font-size: 18px;
+        color: #000;
+        font-weight: 300;
+    }
+
+    #imgPrincipal p:hover {
+        color: #000;
+        font-weight: 600;
+    }
+
+    /*SECCION PRODUCTOS MAS VENDIDOS*/
+
+    #prodMasVend {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-flow: column;
+        grid-area: prodMasVend;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 26px;
+        letter-spacing: 3px;
+        margin: 30px;
+    }
+
+    h2:hover {
+        letter-spacing: 6px;
+    }
+
+    .prodMasVendidos__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container__productos {
+        border: #000 solid 2px;
+        margin: 20px;
+    }
+
+    .container__productos:hover {
+        box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .container__productos img {
+        border-bottom: #000 solid 2px;
+        width: 380px;
+        height: 450px;
+    }
+
+    .container__productos p {
+        text-align: center;
+        padding: 12px;
+        font-weight: 600;
+    }
+
+    .prodMasVendidos__formulario {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    .prodMasVendidos__formulario input {
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .prodMasVendidos__formulario input:hover {
+        font-weight: 300;
+    }
+
+
+    /*SECCION DESCUENTAZOS*/
+
+    #descuentos {
+        grid-area: descuentos;
+    }
+
+    .descuentos__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .descuentos__productos {
+        border: #000 solid 2px;
+        margin: 20px;
+    }
+
+    .descuentos__productos:hover {
+        box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .descuentos__productos img {
+        border-bottom: #000 solid 2px;
+        width: 380px;
+        height: 450px;
+    }
+
+    .descuentos__productos p {
+        text-align: center;
+        padding: 12px;
+        font-weight: 600;
+    }
+
+    /*SECCION INFO*/
+
+    #infoCompra {
+        grid-area: infoCompra;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .info__container {
+        text-align: center;
+        margin: 33px;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 19px;
+    }
+
+
+    /*FOOTER*/
+
+    footer {
+        grid-area: footer;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+    }
+
+    h4 {
+        letter-spacing: 2px;
+        padding: 10px 10px 10px 0;
+    }
+
+    footer img {
+        background-color: #fff;
+        width: 18px;
+        height: 18px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    footer img:hover {
+        background-color: rgb(200, 200, 200);
+    }
+
+    footer a {
+        text-align: center;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    footer a:hover {
+        color: rgb(200, 200, 200);
+    }
+
+
+    .containerFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    footer span {
+        padding-left: 10px;
+    }
+
+    .copyright {
+        padding-top: 40px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .by {
+        font-weight: 600;
+        padding-top: 15px;
+    }
+}
+
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "header"
+            "imgPrincipal"
+            "prodMasVend"
+            "descuentos"
+            "infoCompra"
+            "footer";
+    }
+
+    /* SECCION DE NAVEGACION Y ENCABEZADO*/
+
+    header {
+        grid-area: header;
+        background-color: #000;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px 0 10px 20px;
+    }
+
+    .logo {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 35px;
+        letter-spacing: 2px;
+        padding-bottom: 5px;
+    }
+
+    .logo:hover {
+        font-weight: 300;
+        color: rgb(200, 200, 200);
+    }
+
+    .enlaces {
+        padding: 10px;
+    }
+
+    .enlaces li {
+        display: inline-block;
+        padding: 0 15px;
+    }
+
+    .enlaces a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .enlaces a:hover {
+        font-weight: 300;
+        color: rgb(200, 200, 200);
+    }
+
+    /*SECCION IMG PRINCIPAL*/
+
+    #imgPrincipal {
+        grid-area: imgPrincipal;
+    }
+
+    #imgPrincipal img {
+        width: 100%;
+    }
+
+    #imgPrincipal p {
+        margin: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: #000;
+        font-weight: 300;
+    }
+
+    #imgPrincipal p:hover {
+        color: #000;
+        font-weight: 600;
+    }
+
+    /*SECCION PRODUCTOS MAS VENDIDOS*/
+
+    #prodMasVend {
+        grid-area: prodMasVend;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin: 30px;
+    }
+
+    h2:hover {
+        letter-spacing: 6px;
+    }
+
+    .prodMasVendidos__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container__productos {
+        border: #000 solid 2px;
+        margin: 20px;
+    }
+
+    .container__productos:hover {
+        box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .container__productos img {
+        border-bottom: #000 solid 2px;
+        width: 420px;
+        height: 490px;
+    }
+
+    .container__productos p {
+        text-align: center;
+        padding: 12px;
+        font-weight: 600;
+    }
+
+    .prodMasVendidos__formulario {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    .prodMasVendidos__formulario input {
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .prodMasVendidos__formulario input:hover {
+        font-weight: 300;
+    }
+
+
+    /*SECCION DESCUENTAZOS*/
+
+    #descuentos {
+        grid-area: descuentos;
+    }
+
+    .descuentos__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .descuentos__productos {
+        border: #000 solid 2px;
+        margin: 20px;
+    }
+
+    .descuentos__productos:hover {
+        box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .descuentos__productos img {
+        border-bottom: #000 solid 2px;
+        width: 420px;
+        height: 490px;
+    }
+
+    .descuentos__productos p {
+        text-align: center;
+        padding: 12px;
+        font-weight: 600;
+    }
+
+    /*SECCION INFO*/
+
+    #infoCompra {
+        grid-area: infoCompra;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 50px;
+    }
+
+    .info__container {
+        text-align: center;
+        margin: 33px;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+
+    /*FOOTER*/
+
+    footer {
+        grid-area: footer;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+    }
+
+    h4 {
+        letter-spacing: 2px;
+        padding: 10px 10px 10px 0;
+    }
+
+    footer img {
+        background-color: #fff;
+        width: 18px;
+        height: 18px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    footer img:hover {
+        background-color: rgb(200, 200, 200);
+    }
+
+    footer a {
+        text-align: center;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    footer a:hover {
+        color: rgb(200, 200, 200);
+    }
+
+
+    .containerFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    footer span {
+        padding-left: 10px;
+    }
+
+    .copyright {
+
+        padding-top: 40px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .by {
+        font-weight: 600;
+        padding-top: 15px;
+    }
+
+}
+
+
+
+
+/* ARCHIVO PRODUCTOS */
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .gridContainer__productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "container__productos"
+            "off"
+            "infoCompra"
+            "footer";
+    }
+
+    #container__productos {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    #container__categoria {
+        padding: 20px;
+    }
+    
+    #container__categoria label {
+        padding-right: 10px;
+        font-weight: 600;
+    }
+    
+    #selector__categoria {
+        background-color: rgb(235, 235, 235);
+    }
+    
+    #container__fotos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .producto__container {
+        border: 2px solid #000;
+        margin: 20px;
+        text-align: center;
+        width: 300px;
+    }
+    
+    .producto__container:hover {
+        box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.3);
+    }
+    
+    .producto__container img {
+        border-bottom: #000 solid 2px;
+        width: 300px;
+        height: 370px;
+    }
+    
+    .producto__container button {
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+    
+    .descripcion__productos {
+        padding: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .prenda {
+        letter-spacing: 1px;
+    }
+    
+    .precio {
+        font-weight: 600;
+    }
+    
+    /* Seccion Off*/
+    
+    #off {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        padding: 30px;
+    }
+
+}
+
+/* VISTA TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .gridContainer__productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "container__productos"
+            "off"
+            "infoCompra"
+            "footer";
+    }
+
+    #container__productos {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    #container__categoria {
+        padding: 20px;
+    }
+    
+    #container__categoria label {
+        padding-right: 10px;
+        font-weight: 600;
+    }
+    
+    #selector__categoria {
+        background-color: rgb(235, 235, 235);
+    }
+    
+    #container__fotos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .producto__container {
+        border: 2px solid #000;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .producto__container:hover {
+        box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.3);
+    }
+    
+    .producto__container img {
+        border-bottom: #000 solid 2px;
+        width: 420px;
+        height: 490px;
+    }
+    
+    .producto__container button {
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+    
+    .descripcion__productos {
+        padding: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .prenda {
+        letter-spacing: 1px;
+    }
+    
+    .precio {
+        padding-left: 160px;
+        font-weight: 600;
+    }
+    
+    /* Seccion Off*/
+    
+    #off {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        padding: 30px;
+    }
+
+}
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    .gridContainer__productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "header"
+            "container__productos"
+            "off"
+            "infoCompra"
+            "footer";
+    }
+
+    #container__productos {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    #container__categoria {
+        padding: 20px;
+    }
+    
+    #container__categoria label {
+        padding-right: 10px;
+        font-weight: 600;
+    }
+    
+    #selector__categoria {
+        background-color: rgb(235, 235, 235);
+    }
+    
+    #container__fotos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .producto__container {
+        border: 2px solid #000;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .producto__container:hover {
+        box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.3);
+    }
+    
+    .producto__container img {
+        border-bottom: #000 solid 2px;
+        width: 420px;
+        height: 490px;
+    }
+    
+    .producto__container button {
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+    
+    .descripcion__productos {
+        padding: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .prenda {
+        letter-spacing: 1px;
+    }
+    
+    .precio {
+        padding-left: 160px;
+        font-weight: 600;
+    }
+    
+    /* Seccion Off*/
+    
+    #off {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        padding: 30px;
+    }
+
+}
+
+
+
+/* ARCHIVO POLITICAS */
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .gridContainer__politicas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "PoliticasCambio"
+            "PoliticasEnvio"
+            "infoCompra"
+            "footer";
+    }
+
+    #PoliticasCambio {
+        grid-area: PoliticasCambio;
+        row-gap: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: baseline;
+        padding: 10px 40px;
+    }
+
+    #PoliticasEnvio {
+        grid-area: PoliticasEnvio;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: baseline;
+        padding: 10px 40px;
+    }
+
+    #PoliticasEnvio button {
+        width: 130px;
+        padding: 10px;
+        margin: 20px;
+        font-weight: 600;
+    }
+
+    #PoliticasEnvio button:hover {
+        font-weight: 300;
+    }
+
+    .ul__politicas {
+        list-style: square;
+    }
+
+    .ul__politicas li {
+        margin: 6px;
+    }
+}
+
+/* VISTA TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .gridContainer__politicas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "PoliticasCambio"
+            "PoliticasEnvio"
+            "infoCompra"
+            "footer";
+    }
+
+    #PoliticasCambio {
+        grid-area: PoliticasCambio;
+        row-gap: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        padding: 0 40px;
+    }
+
+    #PoliticasEnvio {
+        grid-area: PoliticasEnvio;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        padding: 0 40px;
+    }
+
+    #PoliticasEnvio button {
+        width: 130px;
+        padding: 10px;
+        margin: 20px;
+        font-weight: 600;
+    }
+
+    #PoliticasEnvio button:hover {
+        font-weight: 300;
+    }
+
+    .ul__politicas {
+        list-style: square;
+    }
+
+    .ul__politicas li {
+        margin: 6px;
+    }
+
+}
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    .gridContainer__politicas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "header"
+            "PoliticasCambio"
+            "PoliticasEnvio"
+            "infoCompra"
+            "footer";
+    }
+
+    #PoliticasCambio {
+        grid-area: PoliticasCambio;
+        display: flex;
+        flex-flow: column wrap;
+        padding-left: 40px;
+    }
+
+    #PoliticasEnvio {
+        grid-area: PoliticasEnvio;
+        display: flex;
+        flex-flow: column wrap;
+        padding-left: 40px;
+    }
+
+    #PoliticasEnvio button {
+        width: 130px;
+        padding: 10px;
+        margin: 20px;
+        font-weight: 600;
+    }
+
+    #PoliticasEnvio button:hover {
+        font-weight: 300;
+    }
+
+    .ul__politicas {
+        list-style: square;
+    }
+
+    .ul__politicas li {
+        margin: 6px;
+    }
+
+}
+
+
+/* ARCHIVO COMO COMPRAR */
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .gridContainer__comoComrpar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px repeat(3, auto);
+        grid-template-areas:
+            "header"
+            "comoComprar"
+            "infoCompra"
+            "footer";
+    }
+
+    #comoComprar {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 0 40px;
+    }
+    
+    .comoComprarOrden {
+        margin: 20px;
+    }
+    
+    .comoComprarOrden li {
+        margin: 20px;
+    }
+
+}
+
+/* VISTA TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .gridContainer__comoComrpar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "comoComprar"
+            "infoCompra"
+            "footer";
+    }
+
+    #comoComprar {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 0 40px;
+    }
+    
+    .comoComprarOrden {
+        margin: 20px;
+    }
+    
+    .comoComprarOrden li {
+        margin: 20px;
+    }
+
+}
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    .gridContainer__comoComrpar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "comoComprar"
+            "infoCompra"
+            "footer";
+    }
+
+    #comoComprar {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0 40px;
+    }
+    
+    .comoComprarOrden {
+        margin: 20px;
+    }
+    
+    .comoComprarOrden li {
+        margin: 20px;
+    }
+
+}
+
+
+/* ARCHIVO CONTACTO*/
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .gridContainer__contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px repeat(3, auto);
+        grid-template-areas:
+            "header"
+            "containerContacto"
+            "infoCompra"
+            "footer";
+    }
+
+    #containerContacto {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    #sectorContacto {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    #contacto {
+        padding: 20px;
+        margin: 20px;
+        box-shadow:12px 14px 22px -6px rgba(186,184,186,1);
+        width: 280px;
+    }
+    
+    #contacto legend {
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 0 20px;
+    }
+    
+    #contacto form {
+        font-size: 15px;
+    }
+    
+    .casillas {
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .casillas input {
+        padding: 10px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    
+    .casillas select {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .newsletter {
+        padding: 12px;
+    }
+    
+    .newsletter label {
+        font-size: 15px;
+    }
+    
+    .casillas textarea {
+        padding: 8px;
+    }
+    
+    .btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    
+    .btn input {
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        font-weight: 600;
+        box-shadow:12px 14px 22px -6px rgba(186,184,186,1);
+    }
+    
+    .btn input:hover {
+        font-weight: 300;
+    }
+    
+    /* Sección Iframe Ubicacion*/
+    
+    #ubicacion {
+        text-align: center;
+        margin: 40px 0;
+    }
+    
+    #ubicacion h3 {
+        padding-bottom: 20px;
+    }
+    
+    #ubicacion iframe {
+        box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.3);
+        width: 300px;
+        height: 500px;
+    }
+
+}
+
+/* VISTA TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .gridContainer__contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px repeat(3, auto);
+        grid-template-areas:
+            "header"
+            "containerContacto"
+            "infoCompra"
+            "footer";
+    }
+
+    #containerContacto {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    #sectorContacto {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    #contacto {
+        padding: 20px;
+        margin: 20px;
+        box-shadow:12px 14px 22px -6px rgba(186,184,186,1);
+    }
+    
+    #contacto legend {
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 0 20px;
+    }
+    
+    #contacto form {
+        font-size: 20px;
+    }
+    
+    .casillas {
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .casillas input {
+        padding: 8px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .casillas select {
+        padding: 8px;
+        font-size: 15px;
+    }
+    
+    .newsletter {
+        padding: 12px;
+    }
+    
+    .newsletter label {
+        font-size: 15px;
+    }
+    
+    .casillas textarea {
+        padding: 8px;
+    }
+    
+    .btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    
+    .btn input {
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        font-weight: 600;
+        box-shadow:12px 14px 22px -6px rgba(186,184,186,1);
+    }
+    
+    .btn input:hover {
+        font-weight: 300;
+    }
+    
+    /* Sección Iframe Ubicacion*/
+    
+    #ubicacion {
+        text-align: center;
+        margin: 40px 90px;
+    }
+    
+    #ubicacion h3 {
+        padding-bottom: 20px;
+    }
+    
+    #ubicacion iframe {
+        box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.3);
+    }
+
+}
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    .gridContainer__contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "containerContacto"
+            "infoCompra"
+            "footer";
+    }
+
+    #containerContacto {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    #sectorContacto {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #contacto {
+        padding: 20px;
+        margin: 20px;
+        box-shadow:12px 14px 22px -6px rgba(186,184,186,1);
+    }
+    
+    #contacto legend {
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 0 20px;
+    }
+    
+    #contacto form {
+        font-size: 20px;
+    }
+    
+    .casillas {
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .casillas input {
+        padding: 8px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .casillas select {
+        padding: 8px;
+        font-size: 15px;
+    }
+    
+    .newsletter {
+        padding: 12px;
+    }
+    
+    .newsletter label {
+        font-size: 15px;
+    }
+    
+    .casillas textarea {
+        padding: 8px;
+    }
+    
+    .btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    
+    .btn input {
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        font-weight: 600;
+        box-shadow:12px 14px 22px -6px rgba(186,184,186,1);
+    }
+    
+    .btn input:hover {
+        font-weight: 300;
+    }
+    
+    /* Sección Iframe Ubicacion*/
+    
+    #ubicacion {
+        text-align: center;
+        margin: 20px 90px;
+    }
+    
+    #ubicacion h3 {
+        padding-bottom: 20px;
+    }
+    
+    #ubicacion iframe {
+        box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.3);
+    }
+
+}
+
