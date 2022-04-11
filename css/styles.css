@@ -69,7 +69,8 @@ body {
         text-decoration: none;
         font-weight: 600;
         padding-bottom: 10px;
-    }
+        transition: font-weight .5s;
+}
 
     .enlaces a:hover {
         font-weight: 300;
@@ -92,7 +93,8 @@ body {
         font-size: 15px;
         color: #000;
         font-weight: 300;
-    }
+        transition: font-weight .5s;
+}
 
     #imgPrincipal p:hover {
         color: #000;
@@ -114,6 +116,7 @@ body {
         font-size: 22px;
         letter-spacing: 3px;
         margin: 20px;
+        transition: letter-spacing 1.5s;
     }
 
     h2:hover {
@@ -353,7 +356,8 @@ body {
         text-decoration: none;
         font-weight: 600;
         font-size: 14px;
-    }
+        transition: font-weight .5s;
+}
 
     .enlaces a:hover {
         font-weight: 300;
@@ -376,7 +380,8 @@ body {
         font-size: 18px;
         color: #000;
         font-weight: 300;
-    }
+        transition: font-weight .5s;
+}
 
     #imgPrincipal p:hover {
         color: #000;
@@ -398,7 +403,8 @@ body {
         font-size: 26px;
         letter-spacing: 3px;
         margin: 30px;
-    }
+        transition: letter-spacing 1.5s;
+}
 
     h2:hover {
         letter-spacing: 6px;
@@ -632,7 +638,8 @@ body {
         color: #fff;
         text-decoration: none;
         font-weight: 600;
-    }
+        transition: font-weight .5s;
+}
 
     .enlaces a:hover {
         font-weight: 300;
@@ -673,7 +680,8 @@ body {
         font-size: 30px;
         letter-spacing: 3px;
         margin: 30px;
-    }
+        transition: letter-spacing 1.5s;
+}
 
     h2:hover {
         letter-spacing: 6px;
