@@ -14,10 +14,10 @@ body {
     .gridContainer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 240px repeat(5, auto);
+        grid-template-rows: 60.5px repeat(5, auto);
         grid-template-areas:
             "header"
-            "imgPrincipal"
+            "carouselExampleIndicators"
             "prodMasVend"
             "descuentos"
             "infoCompra"
@@ -26,28 +26,19 @@ body {
 
     /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
-    header {
-        grid-area: header;
-        background-color: #000;
-        padding: 10px;
-        position: sticky;
-        text-align: center;
-    }
-
-    nav {
+    .container-fluid {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+        flex-wrap: inherit;
+        align-items: baseline;
+        justify-content: space-evenly !important;
     }
 
     .logo {
         color: #fff;
         text-decoration: none;
         font-weight: 600;
-        font-size: 25px;
+        font-size: 23px;
         letter-spacing: 2px;
-        padding-bottom: 15px;
     }
 
     .logo:hover {
@@ -64,23 +55,24 @@ body {
         flex-flow: column wrap;
     }
 
-    .enlaces a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        padding-bottom: 10px;
-        transition: font-weight .5s;
-}
+    .link-color {
+        color: #fff !important;
+        font-weight: 600 !important;
+    }
 
-    .enlaces a:hover {
-        font-weight: 300;
-        color: rgb(200, 200, 200);
+    .link-color:hover {
+        color: rgb(200, 200, 200) !important;
+        font-weight: 300 !important;
+    }
+
+    .dropdown-item:hover {
+        color: #000 !important;
     }
 
     /*SECCION IMG PRINCIPAL*/
 
     #imgPrincipal {
-        grid-area: imgPrincipal;
+        grid-area: carouselExampleIndicators;
     }
 
     #imgPrincipal img {
@@ -301,10 +293,10 @@ body {
     .gridContainer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 120px repeat(5, auto);
+        grid-template-rows: 63.5px repeat(5, auto);
         grid-template-areas:
             "header"
-            "imgPrincipal"
+            "carouselExampleIndicators"
             "prodMasVend"
             "descuentos"
             "infoCompra"
@@ -313,30 +305,19 @@ body {
 
     /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
-    header {
-        grid-area: header;
-        background-color: #000;
-        padding: 20px;
-        position: sticky;
-        top: 0;
-        text-align: center;
-    }
-
-    nav {
+    .container-fluid {
         display: flex;
-        padding: 10px;
-        align-content: space-around;
-        flex-wrap: wrap;
-        flex-direction: column;
+        flex-wrap: inherit;
+        align-items: baseline;
+        justify-content: space-around !important;
     }
 
     .logo {
         color: #fff;
         text-decoration: none;
         font-weight: 600;
-        font-size: 21px;
+        font-size: 25px;
         letter-spacing: 2px;
-        padding-bottom: 15px;
     }
 
     .logo:hover {
@@ -353,23 +334,24 @@ body {
         padding-left: 15px;
     }
 
-    .enlaces a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
-        transition: font-weight .5s;
-}
+    .link-color {
+        color: #fff !important;
+        font-weight: 600 !important;
+    }
 
-    .enlaces a:hover {
-        font-weight: 300;
-        color: rgb(200, 200, 200);
+    .link-color:hover {
+        color: rgb(200, 200, 200) !important;
+        font-weight: 300 !important;
+    }
+
+    .dropdown-item:hover {
+        color: #000 !important;
     }
 
     /*SECCION IMG PRINCIPAL*/
 
     #imgPrincipal {
-        grid-area: imgPrincipal;
+        grid-area: carouselExampleIndicators;
     }
 
     #imgPrincipal img {
@@ -591,7 +573,7 @@ body {
         grid-template-rows: repeat(6, auto);
         grid-template-areas:
             "header"
-            "imgPrincipal"
+            "carouselExampleIndicators"
             "prodMasVend"
             "descuentos"
             "infoCompra"
@@ -600,28 +582,21 @@ body {
 
     /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
-    header {
-        grid-area: header;
-        background-color: #000;
-        padding: 20px;
-        position: sticky;
-        top: 0;
-    }
-
-    nav {
+    .container-fluid {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px 0 10px 20px;
+        flex-wrap: inherit;
+        align-items: baseline;
+        justify-content: space-between !important;
     }
 
     .logo {
-        color: #fff;
+        color: #fff !important;
         text-decoration: none;
         font-weight: 600;
-        font-size: 35px;
+        font-size: 30px;
         letter-spacing: 2px;
         padding-bottom: 5px;
+        padding-left: 30px;
     }
 
     .logo:hover {
@@ -638,29 +613,32 @@ body {
         padding: 0 15px;
     }
 
-    .enlaces a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        transition: font-weight .5s;
-}
+    .link-color {
+        color: #fff !important;
+        font-weight: 600 !important;
+    }
 
-    .enlaces a:hover {
-        font-weight: 300;
-        color: rgb(200, 200, 200);
+    .link-color:hover {
+        color: rgb(200, 200, 200) !important;
+        font-weight: 300 !important;
+    }
+
+    .dropdown-item:hover {
+        color: #000 !important;
     }
 
     /*SECCION IMG PRINCIPAL*/
 
-    #imgPrincipal {
-        grid-area: imgPrincipal;
+    #carouselExampleIndicators {
+        grid-area: carouselExampleIndicators;
+        margin-top: 71px !important;
     }
 
-    #imgPrincipal img {
+    #carouselExampleIndicators img {
         width: 100%;
     }
 
-    #imgPrincipal p {
+    #carouselExampleIndicators p {
         margin: 20px;
         text-align: center;
         font-size: 20px;
@@ -668,7 +646,7 @@ body {
         font-weight: 300;
     }
 
-    #imgPrincipal p:hover {
+    #carouselExampleIndicators p:hover {
         color: #000;
         font-weight: 600;
     }
@@ -1313,6 +1291,7 @@ body {
         flex-flow: column wrap;
         align-items: center;
         padding: 0 40px;
+        margin-top: 80px;
     }
     
     .comoComprarOrden {
@@ -1344,6 +1323,7 @@ body {
         flex-flow: column wrap;
         align-items: center;
         padding: 0 40px;
+        margin-top: 80px;
     }
     
     .comoComprarOrden {
@@ -1374,6 +1354,7 @@ body {
         display: flex;
         flex-flow: column wrap;
         padding: 0 40px;
+        margin-top: 80px;
     }
     
     .comoComprarOrden {
