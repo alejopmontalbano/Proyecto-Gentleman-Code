@@ -844,13 +844,17 @@ body {
 
 /* ARCHIVO PRODUCTOS */
 
+.breadcrumb {
+    margin: 5px auto;
+}
+
 /* VISTA MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
 
     .gridContainer__productos {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 240px repeat(4, auto);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas:
             "header"
             "container__productos"
@@ -863,6 +867,7 @@ body {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        margin-top: 80px;
     }
     
     #container__categoria {
@@ -903,8 +908,8 @@ body {
     }
     
     .producto__container button {
-        padding: 3px;
-        margin-bottom: 10px;
+        padding: 5px 10px;
+        margin: 0 auto 10px;
     }
     
     .descripcion__productos {
@@ -928,7 +933,7 @@ body {
         display: flex;
         flex-flow: column wrap;
         text-align: center;
-        padding: 30px;
+        padding: 50px;
     }
 
 }
@@ -939,7 +944,7 @@ body {
     .gridContainer__productos {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 120px repeat(4, auto);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas:
             "header"
             "container__productos"
@@ -952,6 +957,7 @@ body {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        margin-top: 80px;
     }
     
     #container__categoria {
@@ -991,8 +997,8 @@ body {
     }
     
     .producto__container button {
-        padding: 3px;
-        margin-bottom: 10px;
+        padding: 5px 10px;
+        margin: 0 auto 10px;
     }
     
     .descripcion__productos {
@@ -1040,6 +1046,7 @@ body {
     #container__productos {
         display: flex;
         flex-flow: column wrap;
+        margin-top: 80px;
     }
     
     #container__categoria {
@@ -1079,8 +1086,8 @@ body {
     }
     
     .producto__container button {
-        padding: 3px;
-        margin-bottom: 10px;
+        padding: 5px 10px;
+        margin: 0 auto 10px;
     }
     
     .descripcion__productos {
@@ -1088,6 +1095,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        text-align: center;
     }
     
     .prenda {
@@ -1120,7 +1128,7 @@ body {
     .gridContainer__politicas {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 240px repeat(4, auto);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas:
             "header"
             "PoliticasCambio"
@@ -1136,6 +1144,7 @@ body {
         flex-flow: column wrap;
         align-items: baseline;
         padding: 10px 40px;
+        margin-top: 80px;
     }
 
     #PoliticasEnvio {
@@ -1147,14 +1156,9 @@ body {
     }
 
     #PoliticasEnvio button {
-        width: 130px;
+        width: 150px;
         padding: 10px;
         margin: 20px;
-        font-weight: 600;
-    }
-
-    #PoliticasEnvio button:hover {
-        font-weight: 300;
     }
 
     .ul__politicas {
@@ -1172,7 +1176,7 @@ body {
     .gridContainer__politicas {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 120px repeat(4, auto);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas:
             "header"
             "PoliticasCambio"
@@ -1183,11 +1187,11 @@ body {
 
     #PoliticasCambio {
         grid-area: PoliticasCambio;
-        row-gap: 10px;
         display: flex;
         flex-flow: column wrap;
         justify-content: flex-start;
         padding: 0 40px;
+        margin-top: 80px;
     }
 
     #PoliticasEnvio {
@@ -1199,14 +1203,9 @@ body {
     }
 
     #PoliticasEnvio button {
-        width: 130px;
+        width: 150px;
         padding: 10px;
         margin: 20px;
-        font-weight: 600;
-    }
-
-    #PoliticasEnvio button:hover {
-        font-weight: 300;
     }
 
     .ul__politicas {
@@ -1239,6 +1238,7 @@ body {
         display: flex;
         flex-flow: column wrap;
         padding-left: 40px;
+        margin-top: 80px;
     }
 
     #PoliticasEnvio {
@@ -1249,14 +1249,9 @@ body {
     }
 
     #PoliticasEnvio button {
-        width: 130px;
+        width: 150px;
         padding: 10px;
         margin: 20px;
-        font-weight: 600;
-    }
-
-    #PoliticasEnvio button:hover {
-        font-weight: 300;
     }
 
     .ul__politicas {
@@ -1278,7 +1273,7 @@ body {
     .gridContainer__comoComrpar {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 240px repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas:
             "header"
             "comoComprar"
@@ -1375,7 +1370,7 @@ body {
     .gridContainer__contacto {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 240px repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas:
             "header"
             "containerContacto"
@@ -1387,6 +1382,7 @@ body {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        margin-top: 80px;
     }
     
     #sectorContacto {
@@ -1448,18 +1444,6 @@ body {
         justify-content:space-around;
     }
     
-    .btn input {
-        padding: 5px;
-        margin: 5px;
-        text-align: center;
-        font-weight: 600;
-        box-shadow:12px 14px 22px -6px rgba(186,184,186,1);
-    }
-    
-    .btn input:hover {
-        font-weight: 300;
-    }
-    
     /* Sección Iframe Ubicacion*/
     
     #ubicacion {
@@ -1485,7 +1469,7 @@ body {
     .gridContainer__contacto {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 120px repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas:
             "header"
             "containerContacto"
@@ -1557,18 +1541,6 @@ body {
         justify-content:space-around;
     }
     
-    .btn input {
-        padding: 5px;
-        margin: 5px;
-        text-align: center;
-        font-weight: 600;
-        box-shadow:12px 14px 22px -6px rgba(186,184,186,1);
-    }
-    
-    .btn input:hover {
-        font-weight: 300;
-    }
-    
     /* Sección Iframe Ubicacion*/
     
     #ubicacion {
@@ -1604,6 +1576,7 @@ body {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        margin-top: 80px;
     }
     
     #sectorContacto {
@@ -1662,18 +1635,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
-    }
-    
-    .btn input {
-        padding: 5px;
-        margin: 5px;
-        text-align: center;
-        font-weight: 600;
-        box-shadow:12px 14px 22px -6px rgba(186,184,186,1);
-    }
-    
-    .btn input:hover {
-        font-weight: 300;
     }
     
     /* Sección Iframe Ubicacion*/
