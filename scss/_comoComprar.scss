@@ -1,0 +1,495 @@
+@import "variables";
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .gridContainer__comoComrpar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "comoComprar"
+            "infoCompra"
+            "footer";
+
+        /* SECCION DE NAVEGACION Y ENCABEZADO*/
+
+        .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: baseline;
+            justify-content: space-evenly !important;
+        }
+
+        .logo {
+            color: $color-letraFO !important;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 23px;
+            letter-spacing: 2px;
+
+            &:hover {
+                font-weight: 300;
+                color: $color-hoverLetras;
+            }
+        }
+
+        .link-color {
+            color: $color-letraFO;
+            font-weight: 600;
+
+            &:hover {
+                color: $color-hoverLetras !important;
+                font-weight: 300 !important;
+            }
+        }
+
+        .dropdown-item:hover {
+            color: #000 !important;
+        }
+
+        #comoComprar {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding: 0 40px;
+            margin-top: 80px;
+
+            .breadcrumb {
+                margin: 5px auto;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: $size-H2Mobile;
+                letter-spacing: 3px;
+                margin: 20px;
+                transition: letter-spacing 1.5s;
+
+                &:hover {
+                    letter-spacing: 6px;
+                }
+            }
+        }
+
+        /*SECCION INFO*/
+
+        #infoCompra {
+            grid-area: infoCompra;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 50px;
+
+            .info__container {
+                text-align: center;
+                margin: 30px;
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 19px;
+                }
+            }
+        }
+
+        /*FOOTER*/
+
+        footer {
+            grid-area: footer;
+            background-color: #000;
+            color: $color-letraFO;
+            padding: 10px;
+
+            .containerFooter {
+                display: flex;
+                flex-flow: column wrap;
+                padding-bottom: 10px;
+
+                ul {
+                    list-style: none;
+
+                    h4 {
+                        letter-spacing: 2px;
+                        padding: 10px 10px 10px 0;
+                    }
+
+                    li {
+                        margin: 8px;
+
+                        a {
+                            text-align: center;
+                            margin: 0 auto;
+                            text-decoration: none;
+                            color: #fff;
+
+                            &:hover {
+                                color: rgb(200, 200, 200);
+                            }
+
+                            span {
+                                padding-left: 10px;
+                            }
+                        }
+
+                        img {
+                            background-color: #fff;
+                            width: $ancho-redes-fotos;
+                            height: $alto-redes-fotos;
+                            padding: 5px;
+                            border-radius: 10px;
+
+                            &:hover {
+                                background-color: rgb(200, 200, 200);
+                            }
+                        }
+                    }
+                }
+
+                .copyright {
+                    padding-top: 40px;
+
+                    p {
+                        text-align: center;
+
+                        .by {
+                            padding-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* VISTA TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .gridContainer__comoComrpar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "comoComprar"
+            "infoCompra"
+            "footer";
+
+        /* SECCION DE NAVEGACION Y ENCABEZADO*/
+
+        .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: baseline;
+            justify-content: space-around !important;
+        }
+
+        .logo {
+            color: $color-letraFO !important;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 25px;
+            letter-spacing: 2px;
+
+            &:hover {
+                font-weight: 300;
+                color: $color-hoverLetras;
+            }
+        }
+
+        .link-color {
+            color: $color-letraFO;
+            font-size: 15px;
+            font-weight: 600;
+
+            &:hover {
+                color: $color-hoverLetras !important;
+                font-weight: 300 !important;
+            }
+        }
+
+        .dropdown-item:hover {
+            color: #000 !important;
+        }
+
+        #comoComprar {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding: 0 40px;
+            margin-top: 80px;
+
+            .breadcrumb {
+                margin: 5px auto;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: $size-H2Tablet;
+                letter-spacing: 3px;
+                margin: 30px;
+                transition: letter-spacing 1.5s;
+
+                &:hover {
+                    letter-spacing: 6px;
+                }
+            }
+        }
+
+        /*SECCION INFO*/
+
+        #infoCompra {
+            grid-area: infoCompra;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 50px;
+
+            .info__container {
+                text-align: center;
+                margin: 30px;
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 19px;
+                }
+            }
+        }
+
+        /*FOOTER*/
+
+        footer {
+            grid-area: footer;
+            background-color: #000;
+            color: $color-letraFO;
+            padding: 10px;
+
+            .containerFooter {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                flex-direction: row;
+                padding-bottom: 10px;
+
+                ul {
+                    list-style: none;
+
+                    h4 {
+                        letter-spacing: 2px;
+                        padding: 10px 10px 10px 0;
+                    }
+
+                    li {
+                        margin: 8px;
+
+                        a {
+                            text-align: center;
+                            margin: 0 auto;
+                            text-decoration: none;
+                            color: #fff;
+
+                            &:hover {
+                                color: rgb(200, 200, 200);
+                            }
+
+                            span {
+                                padding-left: 10px;
+                            }
+                        }
+
+                        img {
+                            background-color: #fff;
+                            width: $ancho-redes-fotos;
+                            height: $alto-redes-fotos;
+                            padding: 5px;
+                            border-radius: 10px;
+
+                            &:hover {
+                                background-color: rgb(200, 200, 200);
+                            }
+                        }
+                    }
+                }
+
+                .copyright {
+                    padding-top: 40px;
+
+                    p {
+                        text-align: center;
+
+                        .by {
+                            padding-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    .gridContainer__comoComrpar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "comoComprar"
+            "infoCompra"
+            "footer";
+
+        /* SECCION DE NAVEGACION Y ENCABEZADO*/
+
+        .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: baseline;
+            justify-content: space-between !important;
+        }
+
+        .logo {
+            color: $color-letraFO !important;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 30px;
+            letter-spacing: 2px;
+            padding-bottom: 5px;
+            padding-left: 30px;
+
+            &:hover {
+                font-weight: 300;
+                color: $color-hoverLetras;
+            }
+        }
+
+        .link-color {
+            color: $color-letraFO;
+            font-weight: 600;
+
+            &:hover {
+                color: $color-hoverLetras !important;
+                font-weight: 300 !important;
+            }
+        }
+
+        .dropdown-item:hover {
+            color: #000 !important;
+        }
+
+        #comoComprar {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding: 0 40px;
+            margin-top: 80px;
+
+            .breadcrumb {
+                margin: 5px auto;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: $size-H2Desktop;
+                letter-spacing: 3px;
+                margin: 30px;
+                transition: letter-spacing 1.5s;
+
+                &:hover {
+                    letter-spacing: 6px;
+                }
+            }
+        }
+
+        /*SECCION INFO*/
+
+        #infoCompra {
+            grid-area: infoCompra;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 50px;
+
+            .info__container {
+                text-align: center;
+                margin: 33px;
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        /*FOOTER*/
+
+        footer {
+            grid-area: footer;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+
+            .containerFooter {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding-bottom: 10px;
+
+                ul {
+                    list-style: none;
+
+                    h4 {
+                        letter-spacing: 2px;
+                        padding: 10px 10px 10px 0;
+                    }
+
+                    li {
+                        margin: 8px;
+
+                        a {
+                            text-align: center;
+                            margin: 0 auto;
+                            text-decoration: none;
+                            color: #fff;
+
+                            &:hover {
+                                color: rgb(200, 200, 200);
+                            }
+
+                            span {
+                                padding-left: 10px;
+                            }
+                        }
+
+                        img {
+                            background-color: #fff;
+                            width: $ancho-redes-fotos;
+                            height: $alto-redes-fotos;
+                            padding: 5px;
+                            border-radius: 10px;
+
+                            &:hover {
+                                background-color: rgb(200, 200, 200);
+                            }
+                        }
+                    }
+                }
+
+                .copyright {
+                    padding-top: 40px;
+
+                    p {
+                        text-align: center;
+
+                        .by {
+                            padding-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
