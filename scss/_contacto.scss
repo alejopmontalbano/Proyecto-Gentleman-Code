@@ -35,12 +35,12 @@
         }
 
         .link-color {
-            color: $color-letraFO;
+            color: $color-letraFO !important;
             font-weight: 600;
 
             &:hover {
-                color: $color-hoverLetras !important;
-                font-weight: 300 !important;
+                color: $color-hoverLetras;
+                font-weight: 300;
             }
         }
 
@@ -201,10 +201,10 @@
                             &:hover {
                                 color: rgb(200, 200, 200);
                             }
+                        }
 
-                            span {
-                                padding-left: 10px;
-                            }
+                        span {
+                            padding-left: 10px;
                         }
 
                         img {
@@ -226,164 +226,165 @@
 
                     p {
                         text-align: center;
-
-                        .by {
-                            padding-top: 15px;
-                        }
                     }
+                }
+
+                .by {
+                    padding-top: 15px;
+                    font-weight: bold !important;
                 }
             }
         }
     }
 }
 
-    /* VISTA TABLET */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        .gridContainer__contacto {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, auto);
-            grid-template-areas:
-                "header"
-                "containerContacto"
-                "infoCompra"
-                "footer";
+/* VISTA TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .gridContainer__contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "containerContacto"
+            "infoCompra"
+            "footer";
 
-            /* SECCION DE NAVEGACION Y ENCABEZADO*/
+        /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
-            .container-fluid {
-                display: flex;
-                flex-wrap: inherit;
-                align-items: baseline;
-                justify-content: space-around !important;
+        .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: baseline;
+            justify-content: space-around !important;
+        }
+
+        .logo {
+            color: $color-letraFO !important;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 25px;
+            letter-spacing: 2px;
+
+            &:hover {
+                font-weight: 300;
+                color: $color-hoverLetras;
+            }
+        }
+
+        .link-color {
+            color: $color-letraFO !important;
+            font-size: 15px;
+            font-weight: 600;
+
+            &:hover {
+                color: $color-hoverLetras;
+                font-weight: 300;
+            }
+        }
+
+        .dropdown-item:hover {
+            color: #000 !important;
+        }
+
+        #containerContacto {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            margin-top: 80px;
+
+            .breadcrumb {
+                margin: 5px auto;
             }
 
-            .logo {
-                color: $color-letraFO !important;
-                text-decoration: none;
-                font-weight: 600;
-                font-size: 25px;
-                letter-spacing: 2px;
+            h2 {
+                text-align: center;
+                font-size: $size-H2Tablet;
+                letter-spacing: 3px;
+                margin: 30px;
+                transition: letter-spacing 1.5s;
 
                 &:hover {
-                    font-weight: 300;
-                    color: $color-hoverLetras;
+                    letter-spacing: 6px;
                 }
             }
 
-            .link-color {
-                color: $color-letraFO;
-                font-size: 15px;
-                font-weight: 600;
-
-                &:hover {
-                    color: $color-hoverLetras !important;
-                    font-weight: 300 !important;
-                }
-            }
-
-            .dropdown-item:hover {
-                color: #000 !important;
-            }
-
-            #containerContacto {
+            #sectorContacto {
                 display: flex;
                 flex-flow: column wrap;
+                align-content: space-around;
                 align-items: center;
-                margin-top: 80px;
 
-                .breadcrumb {
-                    margin: 5px auto;
+                #contacto {
+                    padding: 20px;
+                    margin: 20px;
+                    box-shadow: $box-shadow-contacto;
+
+                    legend {
+                        font-size: 1.5em;
+                        font-weight: 600;
+                        padding: 0 20px;
+                    }
+
+                    form {
+                        font-size: 20px;
+
+                        .casillas {
+                            padding-bottom: 5px;
+                            display: flex;
+                            flex-direction: column;
+
+                            input {
+                                padding: 8px;
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+
+                            select {
+                                padding: 8px;
+                                font-size: 15px;
+                            }
+
+                            textarea {
+                                padding: 8px;
+                            }
+                        }
+
+                        .newsletter {
+                            padding: 12px;
+
+                            label {
+                                font-size: 15px;
+                            }
+                        }
+
+                        .btn {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            margin: 10px;
+                        }
+                    }
                 }
 
-                h2 {
+                /* Sección Iframe Ubicacion*/
+
+                #ubicacion {
                     text-align: center;
-                    font-size: $size-H2Tablet;
-                    letter-spacing: 3px;
-                    margin: 30px;
-                    transition: letter-spacing 1.5s;
+                    margin: 40px 90;
 
-                    &:hover {
-                        letter-spacing: 6px;
-                    }
-                }
-
-                #sectorContacto {
-                    display: flex;
-                    flex-flow: column wrap;
-                    align-content: space-around;
-                    align-items: center;
-
-                    #contacto {
-                        padding: 20px;
-                        margin: 20px;
-                        box-shadow: $box-shadow-contacto;
-
-                        legend {
-                            font-size: 1.5em;
-                            font-weight: 600;
-                            padding: 0 20px;
-                        }
-
-                        form {
-                            font-size: 20px;
-
-                            .casillas {
-                                padding-bottom: 5px;
-                                display: flex;
-                                flex-direction: column;
-
-                                input {
-                                    padding: 8px;
-                                    font-size: 15px;
-                                    font-weight: 600;
-                                }
-
-                                select {
-                                    padding: 8px;
-                                    font-size: 15px;
-                                }
-
-                                textarea {
-                                    padding: 8px;
-                                }
-                            }
-
-                            .newsletter {
-                                padding: 12px;
-
-                                label {
-                                    font-size: 15px;
-                                }
-                            }
-
-                            .btn {
-                                display: flex;
-                                flex-wrap: wrap;
-                                justify-content: space-around;
-                                margin: 10px;
-                            }
-                        }
+                    h3 {
+                        padding-bottom: 20px;
                     }
 
-                    /* Sección Iframe Ubicacion*/
-
-                    #ubicacion {
-                        text-align: center;
-                        margin: 40px 90;
-
-                        h3 {
-                            padding-bottom: 20px;
-                        }
-
-                        iframe {
-                            box-shadow: $box-shadow-producto;
-                        }
+                    iframe {
+                        box-shadow: $box-shadow-producto;
                     }
                 }
             }
+        }
 
-            /*SECCION INFO*/
+        /*SECCION INFO*/
 
         #infoCompra {
             grid-area: infoCompra;
@@ -438,10 +439,10 @@
                             &:hover {
                                 color: rgb(200, 200, 200);
                             }
+                        }
 
-                            span {
-                                padding-left: 10px;
-                            }
+                        span {
+                            padding-left: 10px;
                         }
 
                         img {
@@ -463,166 +464,167 @@
 
                     p {
                         text-align: center;
-
-                        .by {
-                            padding-top: 15px;
-                        }
                     }
                 }
+
+                .by {
+                    padding-top: 15px;
+                    font-weight: bold !important;
+                }
             }
-        }
         }
     }
+}
 
 
-    /* VISTA DESKTOP */
-    @media only screen and (min-width: 1025px) {
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
 
-        .gridContainer__contacto {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, auto);
-            grid-template-areas:
-                "header"
-                "containerContacto"
-                "infoCompra"
-                "footer";
+    .gridContainer__contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "containerContacto"
+            "infoCompra"
+            "footer";
 
-            /* SECCION DE NAVEGACION Y ENCABEZADO*/
+        /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
-            .container-fluid {
-                display: flex;
-                flex-wrap: inherit;
-                align-items: baseline;
-                justify-content: space-between !important;
+        .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: baseline;
+            justify-content: space-between !important;
+        }
+
+        .logo {
+            color: $color-letraFO !important;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 30px;
+            letter-spacing: 2px;
+            padding-bottom: 5px;
+            padding-left: 30px;
+
+            &:hover {
+                font-weight: 300;
+                color: $color-hoverLetras;
+            }
+        }
+
+        .link-color {
+            color: $color-letraFO !important;
+            font-weight: 600;
+
+            &:hover {
+                color: $color-hoverLetras;
+                font-weight: 300;
+            }
+        }
+
+        .dropdown-item:hover {
+            color: #000 !important;
+        }
+
+        #containerContacto {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            margin-top: 80px;
+
+            .breadcrumb {
+                margin: 5px auto;
             }
 
-            .logo {
-                color: $color-letraFO !important;
-                text-decoration: none;
-                font-weight: 600;
-                font-size: 30px;
-                letter-spacing: 2px;
-                padding-bottom: 5px;
-                padding-left: 30px;
+            h2 {
+                text-align: center;
+                font-size: $size-H2Desktop;
+                letter-spacing: 3px;
+                margin: 30px;
+                transition: letter-spacing 1.5s;
 
                 &:hover {
-                    font-weight: 300;
-                    color: $color-hoverLetras;
+                    letter-spacing: 6px;
                 }
             }
 
-            .link-color {
-                color: $color-letraFO;
-                font-weight: 600;
-
-                &:hover {
-                    color: $color-hoverLetras !important;
-                    font-weight: 300 !important;
-                }
-            }
-
-            .dropdown-item:hover {
-                color: #000 !important;
-            }
-
-            #containerContacto {
+            #sectorContacto {
                 display: flex;
-                flex-flow: column wrap;
+                flex-wrap: wrap;
+                align-content: space-around;
                 align-items: center;
-                margin-top: 80px;
 
-                .breadcrumb {
-                    margin: 5px auto;
+                #contacto {
+                    padding: 20px;
+                    margin: 20px;
+                    box-shadow: $box-shadow-contacto;
+
+                    legend {
+                        font-size: 1.5em;
+                        font-weight: 600;
+                        padding: 0 20px;
+                    }
+
+                    form {
+                        font-size: 20px;
+
+                        .casillas {
+                            padding-bottom: 5px;
+                            display: flex;
+                            flex-direction: column;
+
+                            input {
+                                padding: 8px;
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+
+                            select {
+                                padding: 8px;
+                                font-size: 15px;
+                            }
+
+                            textarea {
+                                padding: 8px;
+                            }
+                        }
+
+                        .newsletter {
+                            padding: 12px;
+
+                            label {
+                                font-size: 15px;
+                            }
+                        }
+
+                        .btn {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                        }
+                    }
                 }
 
-                h2 {
+                /* Sección Iframe Ubicacion*/
+
+                #ubicacion {
                     text-align: center;
-                    font-size: $size-H2Desktop;
-                    letter-spacing: 3px;
-                    margin: 30px;
-                    transition: letter-spacing 1.5s;
+                    margin: 20px 90px;
 
-                    &:hover {
-                        letter-spacing: 6px;
-                    }
-                }
-
-                #sectorContacto {
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-content: space-around;
-                    align-items: center;
-
-                    #contacto {
-                        padding: 20px;
-                        margin: 20px;
-                        box-shadow: $box-shadow-contacto;
-
-                        legend {
-                            font-size: 1.5em;
-                            font-weight: 600;
-                            padding: 0 20px;
-                        }
-
-                        form {
-                            font-size: 20px;
-
-                            .casillas {
-                                padding-bottom: 5px;
-                                display: flex;
-                                flex-direction: column;
-
-                                input {
-                                    padding: 8px;
-                                    font-size: 15px;
-                                    font-weight: 600;
-                                }
-
-                                select {
-                                    padding: 8px;
-                                    font-size: 15px;
-                                }
-
-                                textarea {
-                                    padding: 8px;
-                                }
-                            }
-
-                            .newsletter {
-                                padding: 12px;
-
-                                label {
-                                    font-size: 15px;
-                                }
-                            }
-
-                            .btn {
-                                display: flex;
-                                flex-wrap: wrap;
-                                justify-content: space-around;
-                            }
-                        }
+                    h3 {
+                        padding-bottom: 20px;
                     }
 
-                    /* Sección Iframe Ubicacion*/
-
-                    #ubicacion {
-                        text-align: center;
-                        margin: 20px 90px;
-
-                        h3 {
-                            padding-bottom: 20px;
-                        }
-
-                        iframe {
-                            box-shadow: $box-shadow-producto;
-                        }
+                    iframe {
+                        box-shadow: $box-shadow-producto;
                     }
                 }
             }
+        }
 
-            /*SECCION INFO*/
+        /*SECCION INFO*/
 
         #infoCompra {
             grid-area: infoCompra;
@@ -676,10 +678,10 @@
                             &:hover {
                                 color: rgb(200, 200, 200);
                             }
+                        }
 
-                            span {
-                                padding-left: 10px;
-                            }
+                        span {
+                            padding-left: 10px;
                         }
 
                         img {
@@ -701,13 +703,14 @@
 
                     p {
                         text-align: center;
-
-                        .by {
-                            padding-top: 15px;
-                        }
                     }
+                }
+
+                .by {
+                    padding-top: 15px;
+                    font-weight: bold !important;
                 }
             }
         }
-        }
     }
+}

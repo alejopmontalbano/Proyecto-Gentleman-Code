@@ -36,12 +36,12 @@
         }
 
         .link-color {
-            color: $color-letraFO;
+            color: $color-letraFO !important;
             font-weight: 600;
 
             &:hover {
-                color: $color-hoverLetras !important;
-                font-weight: 300 !important;
+                color: $color-hoverLetras;
+                font-weight: 300;
             }
         }
 
@@ -54,7 +54,7 @@
             row-gap: 10px;
             display: flex;
             flex-flow: column wrap;
-            align-items: baseline;
+            align-items: center;
             padding: 10px 40px;
             margin-top: 80px;
 
@@ -73,13 +73,23 @@
                     letter-spacing: 6px;
                 }
             }
+
+            .cambios {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+
+                    .dudas {
+                        margin: 6px;
+                    }
+            }
         }
 
         #PoliticasEnvio {
             grid-area: PoliticasEnvio;
             display: flex;
             flex-flow: column wrap;
-            align-items: baseline;
+            align-items: center;
             padding: 10px 40px;
 
             h2 {
@@ -162,10 +172,10 @@
                             &:hover {
                                 color: rgb(200, 200, 200);
                             }
+                        }
 
-                            span {
-                                padding-left: 10px;
-                            }
+                        span {
+                            padding-left: 10px;
                         }
 
                         img {
@@ -187,11 +197,12 @@
 
                     p {
                         text-align: center;
-
-                        .by {
-                            padding-top: 15px;
-                        }
                     }
+                }
+
+                .by {
+                    padding-top: 15px;
+                    font-weight: bold !important;
                 }
             }
         }
@@ -235,13 +246,13 @@
         }
 
         .link-color {
-            color: $color-letraFO;
+            color: $color-letraFO !important;
             font-size: 15px;
             font-weight: 600;
 
             &:hover {
-                color: $color-hoverLetras !important;
-                font-weight: 300 !important;
+                color: $color-hoverLetras;
+                font-weight: 300;
             }
         }
 
@@ -363,10 +374,9 @@
                             &:hover {
                                 color: rgb(200, 200, 200);
                             }
-
-                            span {
-                                padding-left: 10px;
-                            }
+                        }
+                        span {
+                            padding-left: 10px;
                         }
 
                         img {
@@ -388,11 +398,12 @@
 
                     p {
                         text-align: center;
-
-                        .by {
-                            padding-top: 15px;
-                        }
                     }
+                }
+
+                .by {
+                    padding-top: 15px;
+                    font-weight: bold !important;
                 }
             }
         }
@@ -439,12 +450,12 @@
         }
 
         .link-color {
-            color: $color-letraFO;
+            color: $color-letraFO !important;
             font-weight: 600;
 
             &:hover {
-                color: $color-hoverLetras !important;
-                font-weight: 300 !important;
+                color: $color-hoverLetras;
+                font-weight: 300;
             }
         }
 
@@ -563,10 +574,10 @@
                             &:hover {
                                 color: rgb(200, 200, 200);
                             }
+                        }
 
-                            span {
-                                padding-left: 10px;
-                            }
+                        span {
+                            padding-left: 10px;
                         }
 
                         img {
@@ -588,11 +599,12 @@
 
                     p {
                         text-align: center;
-
-                        .by {
-                            padding-top: 15px;
-                        }
                     }
+                }
+
+                .by {
+                    padding-top: 15px;
+                    font-weight: bold !important;
                 }
             }
         }
