@@ -1,0 +1,15 @@
+$mapRedesText: (instagram: rgb(225, 48, 108), facebook: rgb(5, 10, 230), tiktok: rgb(253, 36, 76));
+
+@each $red, $color in $mapRedesText {
+    .#{$red} {
+        color: $color;
+    }
+}
+
+$mapRedesLogo: (instagram: rgb(225, 48, 108), facebook: rgb(5, 10, 230), tiktok: rgb(253, 36, 76));
+
+@each $red, $color in $mapRedesLogo {
+    .#{$red} {
+        background-color: $color;
+    }
+}

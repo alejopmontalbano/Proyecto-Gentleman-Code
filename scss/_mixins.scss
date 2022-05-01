@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin sizesFotoProducto-mobile($ancho-foto-producto-mobile, $alto-foto-producto-mobile) {
+    width: $ancho-foto-producto-mobile;
+    height: $alto-foto-producto-mobile;
+}
+
+@mixin sizesFotoProducto-tablet($ancho-foto-producto-tablet, $alto-foto-producto-tablet) {
+    width: $ancho-foto-producto-tablet;
+    height: $alto-foto-producto-tablet;
+}
+
+@mixin sizesFotoProducto-desktop($ancho-foto-producto-desktop, $alto-foto-producto-desktop) {
+    width: $ancho-foto-producto-desktop;
+    height: $alto-foto-producto-desktop;
+}
+
+@mixin sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos) {
+    width: $ancho-redes-fotos;
+    height: $alto-redes-fotos;
+}

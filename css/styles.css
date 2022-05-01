@@ -7,6 +7,7 @@
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header" "container__productos" "off" "infoCompra" "footer";
     /* SECCION DE NAVEGACION Y ENCABEZADO*/
+    /* Seccion Off*/
     /*SECCION INFO*/
     /*FOOTER*/ }
     .gridContainer__productos .container-fluid {
@@ -62,7 +63,6 @@
           border: #000 solid 2px;
           margin: 20px;
           text-align: center;
-          width: 300px;
           transition: all .3; }
           .gridContainer__productos #container__productos #container__fotos .producto__container:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
@@ -87,6 +87,18 @@
         flex-flow: column wrap;
         text-align: center;
         padding: 50px; }
+    .gridContainer__productos #off {
+      display: flex;
+      flex-flow: column wrap;
+      text-align: center;
+      padding: 50px; }
+      .gridContainer__productos #off .offHoy {
+        font-size: 22px;
+        letter-spacing: 3px;
+        margin: 30px;
+        transition: letter-spacing 1.5s; }
+        .gridContainer__productos #off .offHoy:hover {
+          letter-spacing: 6px; }
     .gridContainer__productos #infoCompra {
       grid-area: infoCompra;
       display: flex;
@@ -148,6 +160,7 @@
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header" "container__productos" "off" "infoCompra" "footer";
     /* SECCION DE NAVEGACION Y ENCABEZADO*/
+    /* Seccion Off*/
     /*SECCION INFO*/
     /*FOOTER*/ }
     .gridContainer__productos .container-fluid {
@@ -177,8 +190,7 @@
       display: flex;
       flex-flow: column wrap;
       align-items: center;
-      margin-top: 80px;
-      /* Seccion Off*/ }
+      margin-top: 80px; }
       .gridContainer__productos #container__productos .breadcrumb {
         margin: 5px auto; }
       .gridContainer__productos #container__productos h2 {
@@ -204,7 +216,6 @@
           border: #000 solid 2px;
           margin: 20px;
           text-align: center;
-          width: 300px;
           transition: all .3; }
           .gridContainer__productos #container__productos #container__fotos .producto__container:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
@@ -224,11 +235,18 @@
           .gridContainer__productos #container__productos #container__fotos .producto__container button {
             padding: 5px 10px;
             margin: 0 auto 10px; }
-      .gridContainer__productos #container__productos #off {
-        display: flex;
-        flex-flow: column wrap;
-        text-align: center;
-        padding: 50px; }
+    .gridContainer__productos #off {
+      display: flex;
+      flex-flow: column wrap;
+      text-align: center;
+      padding: 50px; }
+      .gridContainer__productos #off .offHoy {
+        font-size: 26px;
+        letter-spacing: 3px;
+        margin: 30px;
+        transition: letter-spacing 1.5s; }
+        .gridContainer__productos #off .offHoy:hover {
+          letter-spacing: 6px; }
     .gridContainer__productos #infoCompra {
       grid-area: infoCompra;
       display: flex;
@@ -292,6 +310,7 @@
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header" "container__productos" "off" "infoCompra" "footer";
     /* SECCION DE NAVEGACION Y ENCABEZADO*/
+    /* Seccion Off*/
     /*SECCION INFO*/
     /*FOOTER*/ }
     .gridContainer__productos .container-fluid {
@@ -321,9 +340,7 @@
     .gridContainer__productos #container__productos {
       display: flex;
       flex-flow: column wrap;
-      align-items: center;
-      margin-top: 80px;
-      /* Seccion Off*/ }
+      margin-top: 80px; }
       .gridContainer__productos #container__productos .breadcrumb {
         margin: 5px auto; }
       .gridContainer__productos #container__productos h2 {
@@ -349,7 +366,6 @@
           border: #000 solid 2px;
           margin: 20px;
           text-align: center;
-          width: 300px;
           transition: all .3; }
           .gridContainer__productos #container__productos #container__fotos .producto__container:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
@@ -369,11 +385,18 @@
           .gridContainer__productos #container__productos #container__fotos .producto__container button {
             padding: 5px 10px;
             margin: 0 auto 10px; }
-      .gridContainer__productos #container__productos #off {
-        display: flex;
-        flex-flow: column wrap;
-        text-align: center;
-        padding: 50px; }
+    .gridContainer__productos #off {
+      display: flex;
+      flex-flow: column wrap;
+      text-align: center;
+      padding: 50px; }
+      .gridContainer__productos #off .offHoy {
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin: 30px;
+        transition: letter-spacing 1.5s; }
+        .gridContainer__productos #off .offHoy:hover {
+          letter-spacing: 6px; }
     .gridContainer__productos #infoCompra {
       grid-area: infoCompra;
       display: flex;
@@ -813,7 +836,7 @@
 
 /* VISTA MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .gridContainer__comoComrpar {
+  .gridContainer__comoComprar {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
@@ -821,100 +844,104 @@
     /* SECCION DE NAVEGACION Y ENCABEZADO*/
     /*SECCION INFO*/
     /*FOOTER*/ }
-    .gridContainer__comoComrpar .container-fluid {
+    .gridContainer__comoComprar .container-fluid {
       display: flex;
       flex-wrap: inherit;
       align-items: baseline;
       justify-content: space-evenly !important; }
-    .gridContainer__comoComrpar .logo {
+    .gridContainer__comoComprar .logo {
       color: #fff !important;
       text-decoration: none;
       font-weight: 600;
       font-size: 23px;
       letter-spacing: 2px; }
-      .gridContainer__comoComrpar .logo:hover {
+      .gridContainer__comoComprar .logo:hover {
         font-weight: 300;
         color: #c8c8c8; }
-    .gridContainer__comoComrpar .link-color {
+    .gridContainer__comoComprar .link-color {
       color: #fff !important;
       font-weight: 600; }
-      .gridContainer__comoComrpar .link-color:hover {
+      .gridContainer__comoComprar .link-color:hover {
         color: #c8c8c8;
         font-weight: 300; }
-    .gridContainer__comoComrpar .dropdown-item:hover {
+    .gridContainer__comoComprar .dropdown-item:hover {
       color: #000 !important; }
-    .gridContainer__comoComrpar #comoComprar {
+    .gridContainer__comoComprar #comoComprar {
       display: flex;
       flex-flow: column wrap;
       align-items: center;
       padding: 0 40px;
       margin-top: 80px; }
-      .gridContainer__comoComrpar #comoComprar .breadcrumb {
+      .gridContainer__comoComprar #comoComprar .breadcrumb {
         margin: 5px auto; }
-      .gridContainer__comoComrpar #comoComprar h2 {
+      .gridContainer__comoComprar #comoComprar h2 {
         text-align: center;
         font-size: 22px;
         letter-spacing: 3px;
         margin: 20px;
         transition: letter-spacing 1.5s; }
-        .gridContainer__comoComrpar #comoComprar h2:hover {
+        .gridContainer__comoComprar #comoComprar h2:hover {
           letter-spacing: 6px; }
-    .gridContainer__comoComrpar #infoCompra {
+      .gridContainer__comoComprar #comoComprar p {
+        font-size: 19px;
+        font-weight: 600;
+        margin-top: 20px; }
+    .gridContainer__comoComprar #infoCompra {
       grid-area: infoCompra;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       margin: 50px; }
-      .gridContainer__comoComrpar #infoCompra .info__container {
+      .gridContainer__comoComprar #infoCompra .info__container {
         text-align: center;
         margin: 30px; }
-        .gridContainer__comoComrpar #infoCompra .info__container h3 {
+        .gridContainer__comoComprar #infoCompra .info__container h3 {
           font-weight: 600;
           font-size: 19px; }
-    .gridContainer__comoComrpar footer {
+    .gridContainer__comoComprar footer {
       grid-area: footer;
       background-color: #000;
       color: #fff;
       padding: 10px; }
-      .gridContainer__comoComrpar footer .containerFooter {
+      .gridContainer__comoComprar footer .containerFooter {
         display: flex;
         flex-flow: column wrap;
         padding-bottom: 10px; }
-        .gridContainer__comoComrpar footer .containerFooter ul {
+        .gridContainer__comoComprar footer .containerFooter ul {
           list-style: none; }
-          .gridContainer__comoComrpar footer .containerFooter ul h4 {
+          .gridContainer__comoComprar footer .containerFooter ul h4 {
             letter-spacing: 2px;
             padding: 10px 10px 10px 0; }
-          .gridContainer__comoComrpar footer .containerFooter ul li {
+          .gridContainer__comoComprar footer .containerFooter ul li {
             margin: 8px; }
-            .gridContainer__comoComrpar footer .containerFooter ul li a {
+            .gridContainer__comoComprar footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
               text-decoration: none;
               color: #fff; }
-              .gridContainer__comoComrpar footer .containerFooter ul li a:hover {
+              .gridContainer__comoComprar footer .containerFooter ul li a:hover {
                 color: #c8c8c8; }
-            .gridContainer__comoComrpar footer .containerFooter ul li span {
+            .gridContainer__comoComprar footer .containerFooter ul li span {
               padding-left: 10px; }
-            .gridContainer__comoComrpar footer .containerFooter ul li img {
+            .gridContainer__comoComprar footer .containerFooter ul li img {
               background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__comoComrpar footer .containerFooter ul li img:hover {
+              .gridContainer__comoComprar footer .containerFooter ul li img:hover {
                 background-color: #c8c8c8; }
-        .gridContainer__comoComrpar footer .containerFooter .copyright {
+        .gridContainer__comoComprar footer .containerFooter .copyright {
           padding-top: 40px; }
-          .gridContainer__comoComrpar footer .containerFooter .copyright p {
+          .gridContainer__comoComprar footer .containerFooter .copyright p {
             text-align: center; }
-        .gridContainer__comoComrpar footer .containerFooter .by {
+        .gridContainer__comoComprar footer .containerFooter .by {
           padding-top: 15px;
           font-weight: bold !important; } }
 
 /* VISTA TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .gridContainer__comoComrpar {
+  .gridContainer__comoComprar {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
@@ -922,103 +949,106 @@
     /* SECCION DE NAVEGACION Y ENCABEZADO*/
     /*SECCION INFO*/
     /*FOOTER*/ }
-    .gridContainer__comoComrpar .container-fluid {
+    .gridContainer__comoComprar .container-fluid {
       display: flex;
       flex-wrap: inherit;
       align-items: baseline;
       justify-content: space-around !important; }
-    .gridContainer__comoComrpar .logo {
+    .gridContainer__comoComprar .logo {
       color: #fff !important;
       text-decoration: none;
       font-weight: 600;
       font-size: 25px;
       letter-spacing: 2px; }
-      .gridContainer__comoComrpar .logo:hover {
+      .gridContainer__comoComprar .logo:hover {
         font-weight: 300;
         color: #c8c8c8; }
-    .gridContainer__comoComrpar .link-color {
+    .gridContainer__comoComprar .link-color {
       color: #fff !important;
       font-size: 15px;
       font-weight: 600; }
-      .gridContainer__comoComrpar .link-color:hover {
+      .gridContainer__comoComprar .link-color:hover {
         color: #c8c8c8;
         font-weight: 300; }
-    .gridContainer__comoComrpar .dropdown-item:hover {
+    .gridContainer__comoComprar .dropdown-item:hover {
       color: #000 !important; }
-    .gridContainer__comoComrpar #comoComprar {
+    .gridContainer__comoComprar #comoComprar {
       display: flex;
       flex-flow: column wrap;
       align-items: center;
       padding: 0 40px;
       margin-top: 80px; }
-      .gridContainer__comoComrpar #comoComprar .breadcrumb {
+      .gridContainer__comoComprar #comoComprar .breadcrumb {
         margin: 5px auto; }
-      .gridContainer__comoComrpar #comoComprar h2 {
+      .gridContainer__comoComprar #comoComprar h2 {
         text-align: center;
         font-size: 26px;
         letter-spacing: 3px;
         margin: 30px;
         transition: letter-spacing 1.5s; }
-        .gridContainer__comoComrpar #comoComprar h2:hover {
+        .gridContainer__comoComprar #comoComprar h2:hover {
           letter-spacing: 6px; }
-    .gridContainer__comoComrpar #infoCompra {
+      .gridContainer__comoComprar #comoComprar p {
+        font-weight: 600;
+        margin-top: 20px; }
+    .gridContainer__comoComprar #infoCompra {
       grid-area: infoCompra;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       margin: 50px; }
-      .gridContainer__comoComrpar #infoCompra .info__container {
+      .gridContainer__comoComprar #infoCompra .info__container {
         text-align: center;
         margin: 30px; }
-        .gridContainer__comoComrpar #infoCompra .info__container h3 {
+        .gridContainer__comoComprar #infoCompra .info__container h3 {
           font-weight: 600;
           font-size: 19px; }
-    .gridContainer__comoComrpar footer {
+    .gridContainer__comoComprar footer {
       grid-area: footer;
       background-color: #000;
       color: #fff;
       padding: 10px; }
-      .gridContainer__comoComrpar footer .containerFooter {
+      .gridContainer__comoComprar footer .containerFooter {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         flex-direction: row;
         padding-bottom: 10px; }
-        .gridContainer__comoComrpar footer .containerFooter ul {
+        .gridContainer__comoComprar footer .containerFooter ul {
           list-style: none; }
-          .gridContainer__comoComrpar footer .containerFooter ul h4 {
+          .gridContainer__comoComprar footer .containerFooter ul h4 {
             letter-spacing: 2px;
             padding: 10px 10px 10px 0; }
-          .gridContainer__comoComrpar footer .containerFooter ul li {
+          .gridContainer__comoComprar footer .containerFooter ul li {
             margin: 8px; }
-            .gridContainer__comoComrpar footer .containerFooter ul li a {
+            .gridContainer__comoComprar footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
               text-decoration: none;
               color: #fff; }
-              .gridContainer__comoComrpar footer .containerFooter ul li a:hover {
+              .gridContainer__comoComprar footer .containerFooter ul li a:hover {
                 color: #c8c8c8; }
-            .gridContainer__comoComrpar footer .containerFooter ul li span {
+            .gridContainer__comoComprar footer .containerFooter ul li span {
               padding-left: 10px; }
-            .gridContainer__comoComrpar footer .containerFooter ul li img {
+            .gridContainer__comoComprar footer .containerFooter ul li img {
               background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__comoComrpar footer .containerFooter ul li img:hover {
+              .gridContainer__comoComprar footer .containerFooter ul li img:hover {
                 background-color: #c8c8c8; }
-        .gridContainer__comoComrpar footer .containerFooter .copyright {
+        .gridContainer__comoComprar footer .containerFooter .copyright {
           padding-top: 40px; }
-          .gridContainer__comoComrpar footer .containerFooter .copyright p {
+          .gridContainer__comoComprar footer .containerFooter .copyright p {
             text-align: center; }
-        .gridContainer__comoComrpar footer .containerFooter .by {
+        .gridContainer__comoComprar footer .containerFooter .by {
           padding-top: 15px;
           font-weight: bold !important; } }
 
 /* VISTA DESKTOP */
 @media only screen and (min-width: 1025px) {
-  .gridContainer__comoComrpar {
+  .gridContainer__comoComprar {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
@@ -1026,12 +1056,12 @@
     /* SECCION DE NAVEGACION Y ENCABEZADO*/
     /*SECCION INFO*/
     /*FOOTER*/ }
-    .gridContainer__comoComrpar .container-fluid {
+    .gridContainer__comoComprar .container-fluid {
       display: flex;
       flex-wrap: inherit;
       align-items: baseline;
       justify-content: space-between !important; }
-    .gridContainer__comoComrpar .logo {
+    .gridContainer__comoComprar .logo {
       color: #fff !important;
       text-decoration: none;
       font-weight: 600;
@@ -1039,84 +1069,90 @@
       letter-spacing: 2px;
       padding-bottom: 5px;
       padding-left: 30px; }
-      .gridContainer__comoComrpar .logo:hover {
+      .gridContainer__comoComprar .logo:hover {
         font-weight: 300;
         color: #c8c8c8; }
-    .gridContainer__comoComrpar .link-color {
+    .gridContainer__comoComprar .link-color {
       color: #fff !important;
       font-weight: 600; }
-      .gridContainer__comoComrpar .link-color:hover {
+      .gridContainer__comoComprar .link-color:hover {
         color: #c8c8c8;
         font-weight: 300; }
-    .gridContainer__comoComrpar .dropdown-item:hover {
+    .gridContainer__comoComprar .dropdown-item:hover {
       color: #000 !important; }
-    .gridContainer__comoComrpar #comoComprar {
+    .gridContainer__comoComprar #comoComprar {
       display: flex;
       flex-flow: column wrap;
-      align-items: center;
       padding: 0 40px;
       margin-top: 80px; }
-      .gridContainer__comoComrpar #comoComprar .breadcrumb {
+      .gridContainer__comoComprar #comoComprar .breadcrumb {
         margin: 5px auto; }
-      .gridContainer__comoComrpar #comoComprar h2 {
+      .gridContainer__comoComprar #comoComprar h2 {
         text-align: center;
         font-size: 30px;
         letter-spacing: 3px;
         margin: 30px;
         transition: letter-spacing 1.5s; }
-        .gridContainer__comoComrpar #comoComprar h2:hover {
+        .gridContainer__comoComprar #comoComprar h2:hover {
           letter-spacing: 6px; }
-    .gridContainer__comoComrpar #infoCompra {
+      .gridContainer__comoComprar #comoComprar p {
+        text-align: center;
+        font-weight: 600;
+        margin-top: 20px; }
+      .gridContainer__comoComprar #comoComprar .accordion {
+        width: 75%;
+        margin: 0 auto; }
+    .gridContainer__comoComprar #infoCompra {
       grid-area: infoCompra;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       margin: 50px; }
-      .gridContainer__comoComrpar #infoCompra .info__container {
+      .gridContainer__comoComprar #infoCompra .info__container {
         text-align: center;
         margin: 33px; }
-        .gridContainer__comoComrpar #infoCompra .info__container h3 {
+        .gridContainer__comoComprar #infoCompra .info__container h3 {
           font-weight: 600;
           font-size: 22px; }
-    .gridContainer__comoComrpar footer {
+    .gridContainer__comoComprar footer {
       grid-area: footer;
       background-color: #000;
       color: #fff;
       padding: 10px; }
-      .gridContainer__comoComrpar footer .containerFooter {
+      .gridContainer__comoComprar footer .containerFooter {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding-bottom: 10px; }
-        .gridContainer__comoComrpar footer .containerFooter ul {
+        .gridContainer__comoComprar footer .containerFooter ul {
           list-style: none; }
-          .gridContainer__comoComrpar footer .containerFooter ul h4 {
+          .gridContainer__comoComprar footer .containerFooter ul h4 {
             letter-spacing: 2px;
             padding: 10px 10px 10px 0; }
-          .gridContainer__comoComrpar footer .containerFooter ul li {
+          .gridContainer__comoComprar footer .containerFooter ul li {
             margin: 8px; }
-            .gridContainer__comoComrpar footer .containerFooter ul li a {
+            .gridContainer__comoComprar footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
               text-decoration: none;
               color: #fff; }
-              .gridContainer__comoComrpar footer .containerFooter ul li a:hover {
+              .gridContainer__comoComprar footer .containerFooter ul li a:hover {
                 color: #c8c8c8; }
-            .gridContainer__comoComrpar footer .containerFooter ul li span {
+            .gridContainer__comoComprar footer .containerFooter ul li span {
               padding-left: 10px; }
-            .gridContainer__comoComrpar footer .containerFooter ul li img {
+            .gridContainer__comoComprar footer .containerFooter ul li img {
               background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__comoComrpar footer .containerFooter ul li img:hover {
+              .gridContainer__comoComprar footer .containerFooter ul li img:hover {
                 background-color: #c8c8c8; }
-        .gridContainer__comoComrpar footer .containerFooter .copyright {
+        .gridContainer__comoComprar footer .containerFooter .copyright {
           padding-top: 40px; }
-          .gridContainer__comoComrpar footer .containerFooter .copyright p {
+          .gridContainer__comoComprar footer .containerFooter .copyright p {
             text-align: center; }
-        .gridContainer__comoComrpar footer .containerFooter .by {
+        .gridContainer__comoComprar footer .containerFooter .by {
           padding-top: 15px;
           font-weight: bold !important; } }
 
@@ -1563,6 +1599,24 @@
           padding-top: 15px;
           font-weight: bold !important; } }
 
+.instagram {
+  color: #e1306c; }
+
+.facebook {
+  color: #050ae6; }
+
+.tiktok {
+  color: #fd244c; }
+
+.instagram {
+  background-color: #e1306c; }
+
+.facebook {
+  background-color: #050ae6; }
+
+.tiktok {
+  background-color: #fd244c; }
+
 * {
   font-family: 'Montserrat';
   margin: 0;
@@ -1632,9 +1686,9 @@ body {
           .gridContainer #prodMasVend .prodMasVendidos__container .container__productos:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
           .gridContainer #prodMasVend .prodMasVendidos__container .container__productos img {
-            border-bottom: #000 solid 2px;
             width: 300px;
-            height: 370px; }
+            height: 370px;
+            border-bottom: #000 solid 2px; }
           .gridContainer #prodMasVend .prodMasVendidos__container .container__productos p {
             text-align: center;
             padding: 12px;
@@ -1670,9 +1724,9 @@ body {
           .gridContainer #descuentos .descuentos__container .descuentos__productos:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
           .gridContainer #descuentos .descuentos__container .descuentos__productos img {
-            border-bottom: #000 solid 2px;
             width: 300px;
-            height: 300px; }
+            height: 370px;
+            border-bottom: #000 solid 2px; }
           .gridContainer #descuentos .descuentos__container .descuentos__productos p {
             text-align: center;
             padding: 12px;
@@ -1715,9 +1769,9 @@ body {
             .gridContainer footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
+              background-color: #fff;
               padding: 5px;
               border-radius: 10px; }
               .gridContainer footer .containerFooter ul li img:hover {
@@ -1791,9 +1845,9 @@ body {
           .gridContainer #prodMasVend .prodMasVendidos__container .container__productos:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
           .gridContainer #prodMasVend .prodMasVendidos__container .container__productos img {
-            border-bottom: #000 solid 2px;
             width: 380px;
-            height: 450px; }
+            height: 450px;
+            border-bottom: #000 solid 2px; }
           .gridContainer #prodMasVend .prodMasVendidos__container .container__productos p {
             text-align: center;
             padding: 12px;
@@ -1829,9 +1883,9 @@ body {
           .gridContainer #descuentos .descuentos__container .descuentos__productos:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
           .gridContainer #descuentos .descuentos__container .descuentos__productos img {
-            border-bottom: #000 solid 2px;
             width: 380px;
-            height: 380px; }
+            height: 450px;
+            border-bottom: #000 solid 2px; }
           .gridContainer #descuentos .descuentos__container .descuentos__productos p {
             text-align: center;
             padding: 12px;
@@ -1876,9 +1930,9 @@ body {
               .gridContainer footer .containerFooter ul li a span {
                 padding-left: 10px; }
             .gridContainer footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
+              background-color: #fff;
               padding: 5px;
               border-radius: 10px; }
               .gridContainer footer .containerFooter ul li img:hover {
@@ -1954,9 +2008,9 @@ body {
           .gridContainer #prodMasVend .prodMasVendidos__container .container__productos:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
           .gridContainer #prodMasVend .prodMasVendidos__container .container__productos img {
-            border-bottom: #000 solid 2px;
             width: 420px;
-            height: 490px; }
+            height: 490px;
+            border-bottom: #000 solid 2px; }
           .gridContainer #prodMasVend .prodMasVendidos__container .container__productos p {
             text-align: center;
             padding: 12px;
@@ -1992,9 +2046,9 @@ body {
           .gridContainer #descuentos .descuentos__container .descuentos__productos:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
           .gridContainer #descuentos .descuentos__container .descuentos__productos img {
-            border-bottom: #000 solid 2px;
             width: 420px;
-            height: 490px; }
+            height: 490px;
+            border-bottom: #000 solid 2px; }
           .gridContainer #descuentos .descuentos__container .descuentos__productos p {
             text-align: center;
             padding: 12px;
@@ -2038,9 +2092,9 @@ body {
             .gridContainer footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
+              background-color: #fff;
               padding: 5px;
               border-radius: 10px; }
               .gridContainer footer .containerFooter ul li img:hover {
