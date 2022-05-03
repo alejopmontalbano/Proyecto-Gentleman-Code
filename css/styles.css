@@ -1667,13 +1667,13 @@ body {
         width: 100%; }
     .gridContainer #prodMasVend {
       grid-area: prodMasVend; }
-      .gridContainer #prodMasVend h2 {
+      .gridContainer #prodMasVend .prodMasVendidos__titulo {
         text-align: center;
         font-size: 22px;
         letter-spacing: 3px;
         margin: 20px;
         transition: letter-spacing 1.5s; }
-        .gridContainer #prodMasVend h2:hover {
+        .gridContainer #prodMasVend .prodMasVendidos__titulo:hover {
           letter-spacing: 6px; }
       .gridContainer #prodMasVend .prodMasVendidos__container {
         display: flex;
@@ -1705,13 +1705,13 @@ body {
             font-weight: 300; }
     .gridContainer #descuentos {
       grid-area: descuentos; }
-      .gridContainer #descuentos h2 {
+      .gridContainer #descuentos .descuentos__titulo {
         text-align: center;
         font-size: 22px;
         letter-spacing: 3px;
         margin: 20px;
         transition: letter-spacing 1.5s; }
-        .gridContainer #descuentos h2:hover {
+        .gridContainer #descuentos .descuentos__titulo:hover {
           letter-spacing: 6px; }
       .gridContainer #descuentos .descuentos__container {
         display: flex;
@@ -1826,13 +1826,13 @@ body {
         width: 100%; }
     .gridContainer #prodMasVend {
       grid-area: prodMasVend; }
-      .gridContainer #prodMasVend h2 {
+      .gridContainer #prodMasVend .prodMasVendidos__titulo {
         text-align: center;
         font-size: 26px;
         letter-spacing: 3px;
         margin: 30px;
         transition: letter-spacing 1.5s; }
-        .gridContainer #prodMasVend h2:hover {
+        .gridContainer #prodMasVend .prodMasVendidos__titulo:hover {
           letter-spacing: 6px; }
       .gridContainer #prodMasVend .prodMasVendidos__container {
         display: flex;
@@ -1864,13 +1864,13 @@ body {
             font-weight: 300; }
     .gridContainer #descuentos {
       grid-area: descuentos; }
-      .gridContainer #descuentos h2 {
+      .gridContainer #descuentos .descuentos__titulo {
         text-align: center;
         font-size: 26px;
         letter-spacing: 3px;
-        margin: 20px;
+        margin: 30px;
         transition: letter-spacing 1.5s; }
-        .gridContainer #descuentos h2:hover {
+        .gridContainer #descuentos .descuentos__titulo:hover {
           letter-spacing: 6px; }
       .gridContainer #descuentos .descuentos__container {
         display: flex;
@@ -1989,13 +1989,13 @@ body {
         width: 100%; }
     .gridContainer #prodMasVend {
       grid-area: prodMasVend; }
-      .gridContainer #prodMasVend h2 {
+      .gridContainer #prodMasVend .prodMasVendidos__titulo {
         text-align: center;
         font-size: 30px;
         letter-spacing: 3px;
         margin: 30px;
         transition: letter-spacing 1.5s; }
-        .gridContainer #prodMasVend h2:hover {
+        .gridContainer #prodMasVend .prodMasVendidos__titulo:hover {
           letter-spacing: 6px; }
       .gridContainer #prodMasVend .prodMasVendidos__container {
         display: flex;
@@ -2027,13 +2027,13 @@ body {
             font-weight: 300; }
     .gridContainer #descuentos {
       grid-area: descuentos; }
-      .gridContainer #descuentos h2 {
+      .gridContainer #descuentos .descuentos__titulo {
         text-align: center;
         font-size: 30px;
         letter-spacing: 3px;
         margin: 30px;
         transition: letter-spacing 1.5s; }
-        .gridContainer #descuentos h2:hover {
+        .gridContainer #descuentos .descuentos__titulo:hover {
           letter-spacing: 6px; }
       .gridContainer #descuentos .descuentos__container {
         display: flex;

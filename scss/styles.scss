@@ -79,7 +79,7 @@ body {
         #prodMasVend {
             grid-area: prodMasVend;
 
-            h2 {
+            .prodMasVendidos__titulo {
                 text-align: center;
                 font-size: $size-H2Mobile;
                 letter-spacing: 3px;
@@ -141,7 +141,7 @@ body {
         #descuentos {
             grid-area: descuentos;
 
-            h2 {
+            .descuentos__titulo {
                 text-align: center;
                 font-size: $size-H2Mobile;
                 letter-spacing: 3px;
@@ -338,7 +338,7 @@ body {
         #prodMasVend {
             grid-area: prodMasVend;
 
-            h2 {
+            .prodMasVendidos__titulo {
                 text-align: center;
                 font-size: $size-H2Tablet;
                 letter-spacing: 3px;
@@ -400,11 +400,11 @@ body {
         #descuentos {
             grid-area: descuentos;
 
-            h2 {
+            .descuentos__titulo {
                 text-align: center;
                 font-size: $size-H2Tablet;
                 letter-spacing: 3px;
-                margin: 20px;
+                margin: 30px;
                 transition: letter-spacing 1.5s;
 
                 &:hover {
@@ -601,7 +601,7 @@ body {
         #prodMasVend {
             grid-area: prodMasVend;
 
-            h2 {
+            .prodMasVendidos__titulo {
                 text-align: center;
                 font-size: $size-H2Desktop;
                 letter-spacing: 3px;
@@ -663,7 +663,7 @@ body {
         #descuentos {
             grid-area: descuentos;
 
-            h2 {
+            .descuentos__titulo {
                 text-align: center;
                 font-size: $size-H2Desktop;
                 letter-spacing: 3px;
