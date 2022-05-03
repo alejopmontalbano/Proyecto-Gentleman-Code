@@ -1,4 +1,4 @@
-@import "variables", "productos", "politicas", "comoComprar", "contacto", "mixins", "maps";
+@import "variables", "productos", "politicas", "comoComprar", "contacto", "mixins", "maps", "extends";
 
 //INDEX
 
@@ -229,11 +229,6 @@ body {
                             text-align: center;
                             margin: 0 auto;
                             text-decoration: none;
-                            color: #fff;
-
-                            &:hover {
-                                color: rgb(200, 200, 200);
-                            }
                         }
 
                         span {
@@ -242,15 +237,18 @@ body {
 
                         img {
                             @include sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos);
-                            background-color: #fff;
                             padding: 5px;
                             border-radius: 10px;
-
-                            &:hover {
-                                background-color: rgb(200, 200, 200);
-                            }
                         }
                     }
+                }
+
+                .fotoContactanos {
+                    background-color: #fff;
+
+                        &:hover {
+                            background-color: $color-hoverLetras;
+                        }
                 }
 
                 .copyright {
@@ -490,11 +488,6 @@ body {
                             text-align: center;
                             margin: 0 auto;
                             text-decoration: none;
-                            color: #fff;
-
-                            &:hover {
-                                color: rgb(200, 200, 200);
-                            }
 
                             span {
                                 padding-left: 10px;
@@ -503,15 +496,18 @@ body {
 
                         img {
                             @include sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos);
-                            background-color: #fff;
                             padding: 5px;
                             border-radius: 10px;
-
-                            &:hover {
-                                background-color: rgb(200, 200, 200);
-                            }
                         }
                     }
+                }
+
+                .fotoContactanos {
+                    background-color: #fff;
+
+                        &:hover {
+                            background-color: $color-hoverLetras;
+                        }
                 }
 
                 .copyright {
@@ -617,28 +613,6 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-
-                .container__productos {
-                    border: $borde-producto;
-                    margin: 20px;
-                    transition: all .3s;
-
-                    &:hover {
-                        box-shadow: $box-shadow-producto;
-
-                    }
-
-                    img {
-                        @include sizesFotoProducto-desktop($ancho-foto-producto-desktop, $alto-foto-producto-desktop);
-                        border-bottom: $borde-producto;
-                    }
-
-                    p {
-                        text-align: center;
-                        padding: 12px;
-                        font-weight: 600;
-                    }
-                }
             }
 
             .prodMasVendidos__formulario {
@@ -679,27 +653,6 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-
-                .descuentos__productos {
-                    border: $borde-producto;
-                    margin: 20px;
-                    transition: all .3;
-
-                    &:hover {
-                        box-shadow: $box-shadow-producto;
-                    }
-
-                    img {
-                        @include sizesFotoProducto-desktop($ancho-foto-producto-desktop, $alto-foto-producto-desktop);
-                        border-bottom: $borde-producto;
-                    }
-
-                    p {
-                        text-align: center;
-                        padding: 12px;
-                        font-weight: 600;
-                    }
-                }
             }
         }
 
@@ -752,11 +705,6 @@ body {
                             text-align: center;
                             margin: 0 auto;
                             text-decoration: none;
-                            color: #fff;
-
-                            &:hover {
-                                color: rgb(200, 200, 200);
-                            }
                         }
 
                         span {
@@ -765,15 +713,18 @@ body {
 
                         img {
                             @include sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos);
-                            background-color: #fff;
                             padding: 5px;
                             border-radius: 10px;
-
-                            &:hover {
-                                background-color: rgb(200, 200, 200);
-                            }
                         }
                     }
+                }
+
+                .fotoContactanos {
+                    background-color: #fff;
+
+                        &:hover {
+                            background-color: $color-hoverLetras;
+                        }
                 }
 
                 .copyright {

@@ -1,15 +1,23 @@
-$mapRedesText: (instagram: rgb(225, 48, 108), facebook: rgb(5, 10, 230), tiktok: rgb(253, 36, 76));
+$mapRedes: (instagram: rgb(225, 48, 108), facebook: rgb(5, 10, 230), tiktok: #69C9D0);
 
-@each $red, $color in $mapRedesText {
+@each $red, $color in $mapRedes {
     .#{$red} {
-        color: $color;
+        color: #fff;
+
+            &:hover {
+                color: $color;
+            }
     }
 }
 
-$mapRedesLogo: (instagram: rgb(225, 48, 108), facebook: rgb(5, 10, 230), tiktok: rgb(253, 36, 76));
+$mapRedesFoto: (instagramFoto: rgb(225, 48, 108), facebookFoto: rgb(5, 10, 230), tiktokFoto: #69C9D0);
 
-@each $red, $color in $mapRedesLogo {
+@each $red, $color in $mapRedesFoto {
     .#{$red} {
-        background-color: $color;
+        background-color: #fff;
+
+            &:hover {
+                background-color: $color;
+            }
     }
 }

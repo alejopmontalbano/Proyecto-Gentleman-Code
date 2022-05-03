@@ -1,3 +1,5 @@
+@import "mixins";
+
 /* VISTA MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .gridContainer__contacto {
@@ -194,11 +196,6 @@
                             text-align: center;
                             margin: 0 auto;
                             text-decoration: none;
-                            color: #fff;
-
-                            &:hover {
-                                color: rgb(200, 200, 200);
-                            }
                         }
 
                         span {
@@ -206,17 +203,19 @@
                         }
 
                         img {
-                            background-color: #fff;
-                            width: $ancho-redes-fotos;
-                            height: $alto-redes-fotos;
+                            @include sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos);
                             padding: 5px;
                             border-radius: 10px;
-
-                            &:hover {
-                                background-color: rgb(200, 200, 200);
-                            }
                         }
                     }
+                }
+
+                .fotoContactanos {
+                    background-color: #fff;
+
+                        &:hover {
+                            background-color: $color-hoverLetras;
+                        }
                 }
 
                 .copyright {
@@ -432,11 +431,6 @@
                             text-align: center;
                             margin: 0 auto;
                             text-decoration: none;
-                            color: #fff;
-
-                            &:hover {
-                                color: rgb(200, 200, 200);
-                            }
                         }
 
                         span {
@@ -444,17 +438,19 @@
                         }
 
                         img {
-                            background-color: #fff;
-                            width: $ancho-redes-fotos;
-                            height: $alto-redes-fotos;
+                            @include sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos);
                             padding: 5px;
                             border-radius: 10px;
-
-                            &:hover {
-                                background-color: rgb(200, 200, 200);
-                            }
                         }
                     }
+                }
+
+                .fotoContactanos {
+                    background-color: #fff;
+
+                        &:hover {
+                            background-color: $color-hoverLetras;
+                        }
                 }
 
                 .copyright {
@@ -671,11 +667,6 @@
                             text-align: center;
                             margin: 0 auto;
                             text-decoration: none;
-                            color: #fff;
-
-                            &:hover {
-                                color: rgb(200, 200, 200);
-                            }
                         }
 
                         span {
@@ -683,17 +674,19 @@
                         }
 
                         img {
-                            background-color: #fff;
-                            width: $ancho-redes-fotos;
-                            height: $alto-redes-fotos;
+                            @include sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos);
                             padding: 5px;
                             border-radius: 10px;
-
-                            &:hover {
-                                background-color: rgb(200, 200, 200);
-                            }
                         }
                     }
+                }
+
+                .fotoContactanos {
+                    background-color: #fff;
+
+                        &:hover {
+                            background-color: $color-hoverLetras;
+                        }
                 }
 
                 .copyright {

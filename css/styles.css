@@ -67,9 +67,9 @@
           .gridContainer__productos #container__productos #container__fotos .producto__container:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
           .gridContainer__productos #container__productos #container__fotos .producto__container img {
-            border-bottom: #000 solid 2px;
             width: 300px;
-            height: 370px; }
+            height: 370px;
+            border-bottom: #000 solid 2px; }
           .gridContainer__productos #container__productos #container__fotos .producto__container .descripcion__productos {
             padding: 12px;
             display: flex;
@@ -130,20 +130,18 @@
             .gridContainer__productos footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__productos footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__productos footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__productos footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__productos footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__productos footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__productos footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__productos footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__productos footer .containerFooter .copyright p {
@@ -220,9 +218,9 @@
           .gridContainer__productos #container__productos #container__fotos .producto__container:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
           .gridContainer__productos #container__productos #container__fotos .producto__container img {
-            border-bottom: #000 solid 2px;
             width: 380px;
-            height: 450px; }
+            height: 450px;
+            border-bottom: #000 solid 2px; }
           .gridContainer__productos #container__productos #container__fotos .producto__container .descripcion__productos {
             padding: 12px;
             display: flex;
@@ -280,20 +278,18 @@
             .gridContainer__productos footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__productos footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__productos footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__productos footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__productos footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__productos footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__productos footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__productos footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__productos footer .containerFooter .copyright p {
@@ -370,9 +366,9 @@
           .gridContainer__productos #container__productos #container__fotos .producto__container:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
           .gridContainer__productos #container__productos #container__fotos .producto__container img {
-            border-bottom: #000 solid 2px;
             width: 420px;
-            height: 490px; }
+            height: 490px;
+            border-bottom: #000 solid 2px; }
           .gridContainer__productos #container__productos #container__fotos .producto__container .descripcion__productos {
             padding: 12px;
             display: flex;
@@ -429,20 +425,18 @@
             .gridContainer__productos footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__productos footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__productos footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__productos footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__productos footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__productos footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__productos footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__productos footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__productos footer .containerFooter .copyright p {
@@ -560,20 +554,18 @@
             .gridContainer__politicas footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__politicas footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__politicas footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__politicas footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__politicas footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__politicas footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__politicas footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__politicas footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__politicas footer .containerFooter .copyright p {
@@ -687,20 +679,18 @@
             .gridContainer__politicas footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__politicas footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__politicas footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__politicas footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__politicas footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__politicas footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__politicas footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__politicas footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__politicas footer .containerFooter .copyright p {
@@ -812,20 +802,18 @@
             .gridContainer__politicas footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__politicas footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__politicas footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__politicas footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__politicas footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__politicas footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__politicas footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__politicas footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__politicas footer .containerFooter .copyright p {
@@ -917,20 +905,18 @@
             .gridContainer__comoComprar footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__comoComprar footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__comoComprar footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__comoComprar footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__comoComprar footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__comoComprar footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__comoComprar footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__comoComprar footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__comoComprar footer .containerFooter .copyright p {
@@ -1024,20 +1010,18 @@
             .gridContainer__comoComprar footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__comoComprar footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__comoComprar footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__comoComprar footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__comoComprar footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__comoComprar footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__comoComprar footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__comoComprar footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__comoComprar footer .containerFooter .copyright p {
@@ -1134,20 +1118,18 @@
             .gridContainer__comoComprar footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__comoComprar footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__comoComprar footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__comoComprar footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__comoComprar footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__comoComprar footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__comoComprar footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__comoComprar footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__comoComprar footer .containerFooter .copyright p {
@@ -1282,20 +1264,18 @@
             .gridContainer__contacto footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__contacto footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__contacto footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__contacto footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__contacto footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__contacto footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__contacto footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__contacto footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__contacto footer .containerFooter .copyright p {
@@ -1430,20 +1410,18 @@
             .gridContainer__contacto footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__contacto footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__contacto footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__contacto footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__contacto footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__contacto footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__contacto footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__contacto footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__contacto footer .containerFooter .copyright p {
@@ -1577,20 +1555,18 @@
             .gridContainer__contacto footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer__contacto footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer__contacto footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer__contacto footer .containerFooter ul li img {
-              background-color: #fff;
               width: 22px;
               height: 22px;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer__contacto footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer__contacto footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer__contacto footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer__contacto footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer__contacto footer .containerFooter .copyright p {
@@ -1600,22 +1576,49 @@
           font-weight: bold !important; } }
 
 .instagram {
-  color: #e1306c; }
+  color: #fff; }
+  .instagram:hover {
+    color: #e1306c; }
 
 .facebook {
-  color: #050ae6; }
+  color: #fff; }
+  .facebook:hover {
+    color: #050ae6; }
 
 .tiktok {
-  color: #fd244c; }
+  color: #fff; }
+  .tiktok:hover {
+    color: #69C9D0; }
 
-.instagram {
-  background-color: #e1306c; }
+.instagramFoto {
+  background-color: #fff; }
+  .instagramFoto:hover {
+    background-color: #e1306c; }
 
-.facebook {
-  background-color: #050ae6; }
+.facebookFoto {
+  background-color: #fff; }
+  .facebookFoto:hover {
+    background-color: #050ae6; }
 
-.tiktok {
-  background-color: #fd244c; }
+.tiktokFoto {
+  background-color: #fff; }
+  .tiktokFoto:hover {
+    background-color: #69C9D0; }
+
+.container__productos, .descuentos__productos {
+  border: #000 solid 2px;
+  margin: 20px;
+  transition: all .3s; }
+  .container__productos:hover, .descuentos__productos:hover {
+    box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
+  .container__productos img, .descuentos__productos img {
+    width: 420px;
+    height: 490px;
+    border-bottom: #000 solid 2px; }
+  .container__productos p, .descuentos__productos p {
+    text-align: center;
+    padding: 12px;
+    font-weight: 600; }
 
 * {
   font-family: 'Montserrat';
@@ -1679,17 +1682,17 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around; }
-        .gridContainer #prodMasVend .prodMasVendidos__container .container__productos {
+        .gridContainer #prodMasVend .prodMasVendidos__container .container__productos, .gridContainer #prodMasVend .prodMasVendidos__container .descuentos__productos {
           border: #000 solid 2px;
           margin: 20px;
           transition: all .3s; }
-          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos:hover {
+          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos:hover, .gridContainer #prodMasVend .prodMasVendidos__container .descuentos__productos:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
-          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos img {
+          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos img, .gridContainer #prodMasVend .prodMasVendidos__container .descuentos__productos img {
             width: 300px;
             height: 370px;
             border-bottom: #000 solid 2px; }
-          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos p {
+          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos p, .gridContainer #prodMasVend .prodMasVendidos__container .descuentos__productos p {
             text-align: center;
             padding: 12px;
             font-weight: 600; }
@@ -1762,20 +1765,18 @@ body {
             .gridContainer footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer footer .containerFooter ul li img {
               width: 22px;
               height: 22px;
-              background-color: #fff;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer footer .containerFooter .copyright p {
@@ -1838,17 +1839,17 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around; }
-        .gridContainer #prodMasVend .prodMasVendidos__container .container__productos {
+        .gridContainer #prodMasVend .prodMasVendidos__container .container__productos, .gridContainer #prodMasVend .prodMasVendidos__container .descuentos__productos {
           border: #000 solid 2px;
           margin: 20px;
           transition: all .3s; }
-          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos:hover {
+          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos:hover, .gridContainer #prodMasVend .prodMasVendidos__container .descuentos__productos:hover {
             box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
-          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos img {
+          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos img, .gridContainer #prodMasVend .prodMasVendidos__container .descuentos__productos img {
             width: 380px;
             height: 450px;
             border-bottom: #000 solid 2px; }
-          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos p {
+          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos p, .gridContainer #prodMasVend .prodMasVendidos__container .descuentos__productos p {
             text-align: center;
             padding: 12px;
             font-weight: 600; }
@@ -1923,20 +1924,18 @@ body {
             .gridContainer footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
               .gridContainer footer .containerFooter ul li a span {
                 padding-left: 10px; }
             .gridContainer footer .containerFooter ul li img {
               width: 22px;
               height: 22px;
-              background-color: #fff;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer footer .containerFooter .copyright p {
@@ -2001,20 +2000,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around; }
-        .gridContainer #prodMasVend .prodMasVendidos__container .container__productos {
-          border: #000 solid 2px;
-          margin: 20px;
-          transition: all .3s; }
-          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos:hover {
-            box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
-          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos img {
-            width: 420px;
-            height: 490px;
-            border-bottom: #000 solid 2px; }
-          .gridContainer #prodMasVend .prodMasVendidos__container .container__productos p {
-            text-align: center;
-            padding: 12px;
-            font-weight: 600; }
       .gridContainer #prodMasVend .prodMasVendidos__formulario {
         display: flex;
         justify-content: center;
@@ -2039,20 +2024,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around; }
-        .gridContainer #descuentos .descuentos__container .descuentos__productos {
-          border: #000 solid 2px;
-          margin: 20px;
-          transition: all .3; }
-          .gridContainer #descuentos .descuentos__container .descuentos__productos:hover {
-            box-shadow: 0px 0px 26px 4px rgba(0, 0, 0, 0.3); }
-          .gridContainer #descuentos .descuentos__container .descuentos__productos img {
-            width: 420px;
-            height: 490px;
-            border-bottom: #000 solid 2px; }
-          .gridContainer #descuentos .descuentos__container .descuentos__productos p {
-            text-align: center;
-            padding: 12px;
-            font-weight: 600; }
     .gridContainer #infoCompra {
       grid-area: infoCompra;
       display: flex;
@@ -2085,20 +2056,18 @@ body {
             .gridContainer footer .containerFooter ul li a {
               text-align: center;
               margin: 0 auto;
-              text-decoration: none;
-              color: #fff; }
-              .gridContainer footer .containerFooter ul li a:hover {
-                color: #c8c8c8; }
+              text-decoration: none; }
             .gridContainer footer .containerFooter ul li span {
               padding-left: 10px; }
             .gridContainer footer .containerFooter ul li img {
               width: 22px;
               height: 22px;
-              background-color: #fff;
               padding: 5px;
               border-radius: 10px; }
-              .gridContainer footer .containerFooter ul li img:hover {
-                background-color: #c8c8c8; }
+        .gridContainer footer .containerFooter .fotoContactanos {
+          background-color: #fff; }
+          .gridContainer footer .containerFooter .fotoContactanos:hover {
+            background-color: #c8c8c8; }
         .gridContainer footer .containerFooter .copyright {
           padding-top: 40px; }
           .gridContainer footer .containerFooter .copyright p {

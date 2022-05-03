@@ -1,0 +1,28 @@
+// EXTENDS
+
+// VISTA DESKTOP
+.container__productos {
+    border: $borde-producto;
+    margin: 20px;
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: $box-shadow-producto;
+
+    }
+
+    img {
+        @include sizesFotoProducto-desktop($ancho-foto-producto-desktop, $alto-foto-producto-desktop);
+        border-bottom: $borde-producto;
+    }
+
+    p {
+        text-align: center;
+        padding: 12px;
+        font-weight: 600;
+    }
+}
+
+.descuentos__productos {
+    @extend .container__productos;
+}

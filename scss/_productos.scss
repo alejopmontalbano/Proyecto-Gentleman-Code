@@ -1,3 +1,5 @@
+@import "mixins";
+
 /* VISTA MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
 
@@ -99,9 +101,8 @@
                     }
 
                     img {
+                        @include sizesFotoProducto-mobile($ancho-foto-producto-mobile, $alto-foto-producto-mobile);
                         border-bottom: $borde-producto;
-                        width: $ancho-foto-producto-mobile;
-                        height: $alto-foto-producto-mobile;
                     }
 
                     .descripcion__productos {
@@ -204,11 +205,6 @@
                             text-align: center;
                             margin: 0 auto;
                             text-decoration: none;
-                            color: #fff;
-
-                            &:hover {
-                                color: rgb(200, 200, 200);
-                            }
                         }
 
                         span {
@@ -216,17 +212,19 @@
                         }
 
                         img {
-                            background-color: #fff;
-                            width: $ancho-redes-fotos;
-                            height: $alto-redes-fotos;
+                            @include sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos);
                             padding: 5px;
                             border-radius: 10px;
-
-                            &:hover {
-                                background-color: rgb(200, 200, 200);
-                            }
                         }
                     }
+                }
+
+                .fotoContactanos {
+                    background-color: #fff;
+
+                        &:hover {
+                            background-color: $color-hoverLetras;
+                        }
                 }
 
                 .copyright {
@@ -349,9 +347,8 @@
                     }
 
                     img {
+                        @include sizesFotoProducto-tablet($ancho-foto-producto-tablet, $alto-foto-producto-tablet);
                         border-bottom: $borde-producto;
-                        width: $ancho-foto-producto-tablet;
-                        height: $alto-foto-producto-tablet;
                     }
 
                     .descripcion__productos {
@@ -447,11 +444,6 @@
                             text-align: center;
                             margin: 0 auto;
                             text-decoration: none;
-                            color: #fff;
-
-                            &:hover {
-                                color: rgb(200, 200, 200);
-                            }
                         }
 
                         span {
@@ -459,17 +451,19 @@
                         }
 
                         img {
-                            background-color: #fff;
-                            width: $ancho-redes-fotos;
-                            height: $alto-redes-fotos;
+                            @include sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos);
                             padding: 5px;
                             border-radius: 10px;
-
-                            &:hover {
-                                background-color: rgb(200, 200, 200);
-                            }
                         }
                     }
+                }
+
+                .fotoContactanos {
+                    background-color: #fff;
+
+                        &:hover {
+                            background-color: $color-hoverLetras;
+                        }
                 }
 
                 .copyright {
@@ -592,9 +586,8 @@
                     }
 
                     img {
+                        @include sizesFotoProducto-desktop($ancho-foto-producto-desktop, $alto-foto-producto-desktop);
                         border-bottom: $borde-producto;
-                        width: $ancho-foto-producto-desktop;
-                        height: $alto-foto-producto-desktop;
                     }
 
                     .descripcion__productos {
@@ -689,11 +682,6 @@
                             text-align: center;
                             margin: 0 auto;
                             text-decoration: none;
-                            color: #fff;
-
-                            &:hover {
-                                color: rgb(200, 200, 200);
-                            }
                         }
 
                         span {
@@ -701,17 +689,19 @@
                         }
 
                         img {
-                            background-color: #fff;
-                            width: $ancho-redes-fotos;
-                            height: $alto-redes-fotos;
+                            @include sizeLogoRedes($ancho-redes-fotos, $alto-redes-fotos);
                             padding: 5px;
                             border-radius: 10px;
-
-                            &:hover {
-                                background-color: rgb(200, 200, 200);
-                            }
                         }
                     }
+                }
+
+                .fotoContactanos {
+                    background-color: #fff;
+
+                        &:hover {
+                            background-color: $color-hoverLetras;
+                        }
                 }
 
                 .copyright {
