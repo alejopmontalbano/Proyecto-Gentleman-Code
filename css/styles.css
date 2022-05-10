@@ -54,6 +54,7 @@
     flex-flow: column wrap;
     align-items: center;
     margin-top: 80px;
+    /* Seccion Off*/
   }
 
   .gridContainer__productos #container__productos .breadcrumb {
