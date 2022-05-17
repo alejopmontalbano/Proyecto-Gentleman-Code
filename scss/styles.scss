@@ -29,6 +29,10 @@ body {
 
         /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
+        .navbar {
+            background-color: #000;
+        }
+
         .container-fluid {
             display: flex;
             flex-wrap: inherit;
@@ -59,6 +63,10 @@ body {
             }
         }
 
+        .dropdown-menu {
+            background-color: #000;
+        }
+        
         .dropdown-item:hover {
             color: #000 !important;
         }
@@ -286,6 +294,10 @@ body {
 
         /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
+        .navbar {
+            background-color: #000;
+        }
+
         .container-fluid {
             display: flex;
             flex-wrap: inherit;
@@ -315,6 +327,10 @@ body {
                 color: $color-hoverLetras;
                 font-weight: 300;
             }
+        }
+
+        .dropdown-menu {
+            background-color: #000;
         }
 
         .dropdown-item:hover {
@@ -545,6 +561,10 @@ body {
 
         /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
+        .navbar {
+            background-color: #000;
+        }
+
         .container-fluid {
             display: flex;
             flex-wrap: inherit;
@@ -575,6 +595,10 @@ body {
                 color: $color-hoverLetras;
                 font-weight: 300;
             }
+        }
+
+        .dropdown-menu {
+            background-color: #000;
         }
 
         .dropdown-item:hover {

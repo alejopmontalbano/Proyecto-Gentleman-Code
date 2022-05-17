@@ -16,6 +16,10 @@
 
         /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
+        .navbar {
+            background-color: #000;
+        }
+
         .container-fluid {
             display: flex;
             flex-wrap: inherit;
@@ -44,6 +48,10 @@
                 color: $color-hoverLetras;
                 font-weight: 300;
             }
+        }
+
+        .dropdown-menu {
+            background-color: #000;
         }
 
         .dropdown-item:hover {
@@ -223,6 +231,10 @@
 
         /* SECCION DE NAVEGACION Y ENCABEZADO*/
 
+        .navbar {
+            background-color: #000;
+        }
+
         .container-fluid {
             display: flex;
             flex-wrap: inherit;
@@ -252,6 +264,10 @@
                 color: $color-hoverLetras;
                 font-weight: 300;
             }
+        }
+
+        .dropdown-menu {
+            background-color: #000;
         }
 
         .dropdown-item:hover {
@@ -422,6 +438,10 @@
             
         /* SECCION DE NAVEGACION Y ENCABEZADO*/
         
+        .navbar {
+            background-color: #000;
+        }
+
         .container-fluid {
             display: flex;
             flex-wrap: inherit;
@@ -454,6 +474,10 @@
             }
         }
 
+        .dropdown-menu {
+            background-color: #000;
+        }
+        
         .dropdown-item:hover {
             color: #000 !important;
         }
